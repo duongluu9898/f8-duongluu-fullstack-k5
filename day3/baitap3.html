@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai tap 3</title>
+    <link rel="stylesheet" href="./CSS/baitap3.css" />
+  </head>
+  <body>
+    <form action="" class="form__access">
+      <!-- input username -->
+      <div>
+        <label for="username">Username:</label>
+        <input class="custom-input" type="text" id="username" />
+      </div>
+
+      <!-- input password -->
+      <div>
+        <label for="password">Password:</label>
+        <input class="custom-input" type="password" id="password" />
+      </div>
+
+      <!-- input city of employment -->
+      <div>
+        <label for="employment">City of Employment:</label>
+        <input class="custom-input" type="text" id="employment" />
+      </div>
+
+      <!-- web server -->
+      <div>
+        <label for="webserver">Web server</label>
+        <select name="web server" id="webserver">
+          <option value="">--Choose a server--</option>
+          <option value="">Content server</option>
+          <option value="">ABC server</option>
+          <option value="">God server</option>
+        </select>
+      </div>
+
+      <!-- role -->
+      <div class="role">
+        <label for="">Please specify your role:</label>
+        <div class="role__list">
+          <label for="admin"
+            ><input name="role" type="radio" id="admin" />Admin</label
+          >
+          <label for="engineer"
+            ><input name="role" type="radio" id="engineer" />Engineer</label
+          >
+          <label for="manager"
+            ><input name="role" type="radio" id="manager" />Manager</label
+          >
+          <label for="guest"
+            ><input name="role" type="radio" id="guest" />Guest</label
+          >
+        </div>
+      </div>
+
+      <!-- sign on -->
+      <div class="sign-on">
+        <label for="">Single Sign-on to the following:</label>
+        <div class="sign-on__list">
+          <label for="mail"
+            ><input name="signon" type="checkbox" id="mail" />Mail</label
+          >
+          <label for="payroll"
+            ><input name="signon" type="checkbox" id="payroll" />Payroll</label
+          >
+          <label for="service"
+            ><input
+              name="signon"
+              type="checkbox"
+              id="service"
+            />Self-service</label
+          >
+        </div>
+      </div>
+
+      <!-- btn -->
+      <div class="group__button">
+        <button class="btn__login btn">Login</button>
+        <button class="btn__reset btn">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
