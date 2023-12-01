@@ -1,0 +1,67 @@
+/* common */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Alfa Slab One", serif; */
+  font-family: "Bebas Neue", sans-serif;
+}
+
+/* table form */
+.table-form {
+  width: 930px;
+  height: 520px;
+  margin: 100px auto;
+  border-radius: 2px;
+  border: 1px solid #000;
+  background-color: #fefefe;
+}
+
+/* table form heading */
+.table-form__heading {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 46px;
+  font-size: 40px;
+}
+
+/* table form text */
+.table-form__text {
+  font-family: "Alfa Slab One", serif;
+  text-align: center;
+  font-size: 66px;
+  margin-top: -10px;
+}
+
+/* form body */
+.form-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: -30px;
+}
+
+input {
+  height: 44px;
+  width: 360px;
+  padding: 8px 16px;
+}
+
+input::placeholder {
+  font-weight: 500;
+  font-family: "Bebas Neue", sans-serif;
+  color: #000;
+  font-size: 24px;
+}
+
+.form-body__button {
+  font-family: "Alfa Slab One", serif;
+  background-color: #af322b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+}

@@ -1,0 +1,143 @@
+/* common */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+/* best seller */
+.best-seller {
+  width: 1080px;
+  height: 580px;
+  margin: 50px auto;
+  border-radius: 4px;
+  border: 1px solid #000;
+}
+
+/* best seller heading */
+.best-seller__heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 22px;
+}
+
+/* best seller cato */
+.best-seller__cato-list {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-top: -16px;
+}
+
+.best-seller__cato-item:first-child {
+  background-color: #28388d;
+  color: #fff;
+}
+
+.best-seller__cato-item {
+  padding: 10px 14px;
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+
+/* list item */
+.best-seller__item {
+  cursor: pointer;
+}
+
+.best-seller__list {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 80px;
+}
+
+/* best seller item */
+.best-seller__item-img img {
+  width: 160px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.best-seller__item-img:last-child {
+  display: none;
+}
+
+.best-seller__item:hover .best-seller__item-img:first-child {
+  display: none;
+}
+
+.best-seller__item:hover .best-seller__item-img:last-child {
+  display: inline;
+}
+
+/* action */
+.item-action {
+  position: relative;
+}
+
+.action {
+  position: absolute;
+  display: none;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.action-row {
+  display: flex;
+  justify-content: center;
+  column-gap: 16px;
+}
+
+.action-row i {
+  padding: 12px;
+  color: #fff;
+  background: #29378d;
+}
+
+.action-btn {
+  padding: 14px;
+  color: #fff;
+  background: #29378d;
+  width: 160px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 40px;
+  border: none;
+}
+
+.best-seller__item:hover .action {
+  display: block;
+}
+
+/* item rate */
+.best-seller__item-rate {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 8px;
+  color: #9f9f9f;
+}
+
+.active {
+  color: #f4c449;
+}
+
+.best-seller__item-name {
+  text-align: center;
+}
+
+.best-seller__item-price {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+}

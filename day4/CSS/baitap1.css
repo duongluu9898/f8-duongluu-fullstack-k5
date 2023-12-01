@@ -1,0 +1,96 @@
+/* common */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+button,
+input {
+  outline: none;
+}
+
+.container {
+  display: flex;
+  width: 1280px;
+  height: 240px;
+  margin: 100px auto;
+  border: 1px solid #000;
+}
+
+/* form sub */
+.form-sub {
+  background-color: #334455;
+  width: 1270px;
+  height: 230px;
+  margin-top: 4px;
+  margin-left: 5px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.form-sub:hover input {
+  background-color: #ddd;
+}
+
+.form-sub:hover input::placeholder {
+  color: #ffa500;
+}
+
+.form-sub:hover button {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+/* form sub heading */
+.form-sub__heading {
+  color: #fff;
+  margin-left: 38px;
+  font-weight: 500;
+  font-size: 38px;
+  margin-top: 30px;
+}
+
+span {
+  color: #ffa500;
+}
+
+/* form sub desc */
+.form-sub__desc {
+  color: #fff;
+  margin-left: 38px;
+  width: 680px;
+  margin-top: -20px;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+/* form sub body */
+.form-sub__body {
+  margin-left: 38px;
+  margin-top: -8px;
+}
+
+/* form sub input */
+.form-sub__input {
+  padding: 20px 14px 14px 14px;
+  border-radius: 3px;
+  font-size: 12px;
+  width: 280px;
+}
+
+.form-sub__input::placeholder {
+  font-size: 20px;
+}
+
+/* form sub btn */
+.form-sub__btn {
+  border: none;
+  padding: 14px 48px 11px 48px;
+  border-radius: 3px;
+  color: #000;
+  background-color: #f8db35;
+  font-size: 20px;
+}
