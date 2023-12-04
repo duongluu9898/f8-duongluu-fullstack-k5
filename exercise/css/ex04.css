@@ -1,0 +1,28 @@
+/* tất cả các thẻ inline đều là text: vd: img
+- các thẻ inline được căn theo block với text align
+- riêng form thì đặc biệt - có thể k đúng với text align
+ */
+
+p {
+  /* letter-spacing: 5px; */
+  font-size: 20px;
+  /* word-spacing: 10px; */
+  /* line-height: 3; */
+  /* text-decoration: line-through;
+  text-transform: capitalize; */
+  /* text-indent: 50px; */
+}
+
+h1 {
+  /* word-wrap: break-word; */
+  /* word-break: break-all; */
+  /* white-space: pre; */
+}
+
+p {
+  text-align: justify;
+}
+
+div {
+  text-align: center;
+}

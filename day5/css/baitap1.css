@@ -1,0 +1,304 @@
+/* common */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+  color: #a2a2a2;
+  /* font-family: 'Lobster', sans-serif; */
+}
+
+/* section */
+.container {
+  width: 720px;
+  margin: 5px auto;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+}
+
+/* body-wrap */
+.body-wrap {
+  margin: -10px 56px 40px 56px;
+}
+
+/* heading */
+.heading {
+  font-family: "Lobster", sans-serif;
+  font-size: 4.2rem;
+  font-weight: 500;
+  color: #333333;
+}
+
+/* desc */
+.desc {
+  margin-top: -16px;
+  font-size: 1.8rem;
+  width: 500px;
+}
+
+.desc-red {
+  color: #ec574d;
+  line-height: 1.4;
+}
+
+/* form */
+.form {
+  margin-top: 30px;
+}
+
+/* input */
+.input + .input {
+  margin-top: 20px;
+}
+
+.input {
+  display: flex;
+  position: relative;
+  border: 1px solid #e8e8e8;
+  height: 56px;
+  /* padding: 0 8px 0 8px; */
+}
+
+.message {
+  position: absolute;
+  margin-top: -66px;
+  margin-left: 24px;
+  text-align: center;
+  line-height: 46px;
+  display: none;
+
+  color: #fff;
+  background-color: #333;
+
+  width: 140px;
+  height: 46px;
+  font-size: 1.6rem;
+  border-radius: 4px;
+}
+
+.message::after {
+  position: absolute;
+  content: "";
+  margin-top: 46px;
+  margin-left: -100px;
+
+  /* width: 28px;
+  height: 22px; */
+  border-width: 8px 15px;
+  border-style: solid;
+  border-color: transparent;
+  border-top: 8px solid #333;
+}
+
+input {
+  border: none;
+  flex: 1 1;
+  height: 56px;
+  padding: 0 12px 0 18px;
+}
+
+input::placeholder {
+  color: #a2a2a2;
+
+  font-size: 1.6rem;
+}
+
+.focus {
+  display: none;
+}
+
+/* input focus active hover */
+
+/* hover */
+.input:hover .input__icon--left {
+  background-color: #333;
+}
+
+/* .input:hover .message {
+  display: block;
+} */
+
+.input:hover {
+  border-color: #333;
+}
+
+/* focus */
+.input:focus .input__icon--left {
+  background-color: #333;
+}
+
+.input:focus .message {
+  display: block;
+}
+
+.input:focus .input__icon--left,
+.input:focus .input {
+  background-color: #333;
+  border: #333;
+}
+
+.input:focus .input__icon--right {
+  display: none;
+}
+
+.input:focus .focus {
+  display: block;
+}
+
+/* active */
+.input:active .input__icon--left {
+  background-color: #333;
+}
+
+.input:active .message {
+  display: block;
+}
+
+.input:active .input,
+.input:active .input__icon--left {
+  background-color: #333;
+  border: #333;
+}
+
+.input:active .input__icon--right {
+  display: none;
+}
+
+.input:active .focus {
+  display: block;
+}
+
+/* select */
+select {
+  border: none;
+  flex: 1 1;
+  height: 56px;
+  padding: 0 12px 0 12px;
+
+  color: #a2a2a2;
+  font-size: 1.6rem;
+
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+
+textarea {
+  flex: 1 1;
+  padding: 20px 0 0 20px;
+  border: none;
+}
+
+textarea::placeholder {
+  color: #a2a2a2;
+  font-size: 1.8rem;
+}
+
+.input-textarea {
+  height: 240px;
+}
+
+/* input icon left */
+.input__icon--left {
+  background-color: #dcdcdc;
+  color: #fefefe;
+  display: inline-block;
+  height: 100%;
+  width: 56px;
+  text-align: center;
+  line-height: 60px;
+}
+
+span i {
+  font-size: 22px;
+}
+
+.up-down {
+  font-size: 32px;
+}
+
+/* input icon right */
+.input__icon--right i {
+  display: inline-block;
+  color: #dcdcdc;
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px;
+  width: 30px;
+  height: 100%;
+  line-height: 36px;
+}
+
+/* row */
+.row {
+  display: flex;
+  margin-top: 24px;
+}
+
+/* check box */
+.check-box {
+  display: flex;
+  align-items: center;
+}
+
+.check-box input {
+  position: relative;
+  display: block;
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
+
+  /* outline: 2px solid #a2a2a2; */
+}
+
+.check-box input::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 26px;
+  height: 26px;
+  border: 1px solid #a2a2a2;
+  border-radius: 2px;
+  /* left: -1px;
+  top: -1px; */
+}
+
+.check-box label {
+  margin-left: 6px;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  accent-color: #fefefe;
+}
+
+/* button */
+.button {
+  width: 132px;
+  height: 40px;
+  font-size: 1.6rem;
+
+  margin-left: auto;
+  margin-right: 0;
+
+  color: #fff;
+  background-color: #e93e33;
+  border: none;
+  border-radius: 1px;
+}

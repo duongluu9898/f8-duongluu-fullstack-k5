@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+
+    <!-- embed font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- embed font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link css -->
+    <link rel="stylesheet" href="../css/baitap1.css" />
+  </head>
+  <body>
+    <section class="container">
+      <!-- body-wrap -->
+      <div class="body-wrap">
+        <!-- heading -->
+        <h2 class="heading">Hey there</h2>
+
+        <!-- desc -->
+        <p class="desc">
+          <span class="desc-red">We'd like to hear from you.</span> Send us your
+          message or just say hy with our contact form or direct via phone, we
+          love to chat.
+        </p>
+
+        <!-- form -->
+        <form action="" class="form">
+          <!-- input 1 -->
+          <div class="input">
+            <div class="message">Enter your name</div>
+            <span class="input__icon--left">
+              <i class="fa-solid fa-person"></i>
+            </span>
+
+            <input type="text" placeholder="Your name" />
+
+            <span class="input__icon--right">
+              <i class="fa-solid fa-star"></i>
+            </span>
+
+            <span class="input__icon--right focus">
+              <i style="font-size: 16px" class="fa-solid fa-xmark"></i>
+            </span>
+          </div>
+
+          <!-- input 2 -->
+          <div class="input">
+            <div class="message">Enter your email</div>
+
+            <span class="input__icon--left">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+
+            <input type="email" placeholder="your@domain.com" />
+
+            <span class="input__icon--right">
+              <i class="fa-solid fa-star"></i>
+            </span>
+
+            <span class="input__icon--right focus">
+              <i style="font-size: 16px" class="fa-solid fa-xmark"></i>
+            </span>
+          </div>
+
+          <!-- input 3 -->
+          <div class="input">
+            <div class="message">Enter your phone</div>
+
+            <span class="input__icon--left">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </span>
+
+            <input type="text" placeholder="+44 00 123" />
+
+            <span class="input__icon--right focus">
+              <i style="font-size: 16px" class="fa-solid fa-xmark"></i>
+            </span>
+          </div>
+
+          <!-- input 4 -->
+          <div class="input">
+            <div class="message">Enter your subject</div>
+
+            <span class="input__icon--left">
+              <i class="fa-solid fa-book-bookmark"></i>
+            </span>
+
+            <select name="subject" id="">
+              <option value="" hidden selected>Subject</option>
+              <option value="math">Math</option>
+              <option value="music">Music</option>
+              <option value="geography">Geography</option>
+            </select>
+
+            <span class="input__icon--right">
+              <i style="font-size: 22px" class="fa-solid fa-caret-down"></i>
+            </span>
+          </div>
+
+          <!-- input 5 -->
+          <div class="input input-textarea">
+            <div class="message">Enter your message</div>
+
+            <span class="input__icon--left">
+              <i class="fa-solid fa-message"></i>
+            </span>
+
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+
+            <span class="input__icon--right">
+              <i class="fa-solid fa-star"></i>
+            </span>
+
+            <span class="input__icon--right focus">
+              <i style="font-size: 16px" class="fa-solid fa-xmark"></i>
+            </span>
+          </div>
+
+          <div class="row">
+            <!-- check box -->
+            <div class="check-box">
+              <input type="checkbox" id="checkbox" checked />
+              <div>
+                <label for="checkbox">Send me a copy of this message</label>
+              </div>
+            </div>
+
+            <!-- button -->
+            <button class="button">SEND</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

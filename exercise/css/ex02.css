@@ -1,0 +1,22 @@
+/* các đơn vị trong css 
+1. TUYỆT ĐỐI
+-px: px
+-point: pt 1px=1.3px
+
+2. TƯƠNG ĐỐI
+-em: tương đối với thành phần cha
+-rem: tương đối với mặc định trình duyệt
+-%: tương đối với thành phần cha
+-vw
+-vh
+
+-html: thay đối font size mặc định của trình duyệt: chỉ sửa được font size
+=> thường để 62.5%
+*/
+html {
+  font-size: 30px;
+}
+
+.content p {
+  font-size: 2rem;
+}

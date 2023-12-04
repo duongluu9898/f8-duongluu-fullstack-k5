@@ -1,0 +1,79 @@
+/* common */
+
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 1200px;
+  height: 480px;
+  margin: 40px auto;
+  border-radius: 4px;
+}
+
+/* body-wrap  */
+.body-wrap {
+  margin: 10px 4px;
+}
+
+/* article */
+.article + .article {
+  margin-top: 20px;
+}
+
+/* label */
+#checkbox-1 ~ label,
+#checkbox-2 ~ label,
+#checkbox-3 ~ label {
+  color: #fff;
+  background-color: #d95925;
+  display: block;
+  height: 42px;
+  line-height: 42px;
+  font-size: 1.8rem;
+}
+
+/* icon */
+.minus {
+  display: none;
+  line-height: 100%;
+}
+
+.icon {
+  padding: 5px 10px;
+}
+
+/* content */
+.content {
+  display: none;
+  margin-left: 10px;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+/* visible content */
+input[id="checkbox-1"]:checked ~ p,
+input[id="checkbox-2"]:checked ~ p,
+input[id="checkbox-3"]:checked ~ p {
+  display: block;
+}
+
+/* none abstract */
+input[id="checkbox-1"]:checked ~ label .abstract,
+input[id="checkbox-2"]:checked ~ label .abstract,
+input[id="checkbox-3"]:checked ~ label .abstract {
+  display: none;
+}
+
+/* visible minus */
+input[id="checkbox-1"]:checked ~ label .minus,
+input[id="checkbox-2"]:checked ~ label .minus,
+input[id="checkbox-3"]:checked ~ label .minus {
+  display: inline-block;
+}
