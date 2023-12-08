@@ -1,0 +1,129 @@
+/* common */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  background: #ebf5fe;
+  padding: 50px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.item {
+  width: 360px;
+  padding: 18px 38px 18px 18px;
+  margin: 20px;
+  background: #fefefe;
+  border: 2px solid transparent;
+  border-radius: 7px;
+  box-shadow: 0px 0px 7px 1px #ddd;
+}
+
+.item:hover {
+  border: 2px solid #ec847c;
+}
+
+.item__header {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  text-align: center;
+  background: #e4676d;
+  color: #fff;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 56px;
+}
+
+.row:first-child .item:nth-child(1) .icon {
+  background: linear-gradient(
+    90deg,
+    rgb(71, 165, 156) 0%,
+    rgb(60, 133, 104) 33%,
+    rgb(64, 128, 92) 66%
+  );
+}
+
+.row:first-child .item:nth-child(2) .icon {
+  background: linear-gradient(
+    90deg,
+    rgb(172, 120, 65) 0%,
+    rgb(168, 127, 65) 33%,
+    rgb(117, 93, 42) 66%
+  );
+}
+
+.row:last-child .item:nth-child(3) .icon {
+  background: linear-gradient(
+    90deg,
+    rgb(32, 83, 172) 0%,
+    rgb(54, 88, 161) 33%,
+    rgb(56, 77, 141) 66%
+  );
+}
+.row:last-child .item:nth-child(4) .icon {
+  background: linear-gradient(
+    90deg,
+    rgb(97, 49, 148) 0%,
+    rgb(73, 35, 102) 33%,
+    rgb(123, 63, 158) 66%
+  );
+}
+
+.row:last-child .item:nth-child(5) .icon {
+  background: linear-gradient(
+    90deg,
+    rgb(93, 122, 37) 0%,
+    rgb(104, 143, 45) 33%,
+    rgb(107, 155, 50) 66%
+  );
+}
+
+.row:last-child .item:nth-child(6) .icon {
+  background: linear-gradient(
+    90deg,
+    rgb(50, 88, 145) rgb(72, 65, 168) 33%,
+    rgb(82, 80, 190)
+  );
+}
+
+h3 {
+  width: 150px;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+h3::first-line {
+  word-spacing: 98px;
+}
+
+p {
+  margin-top: 10px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+a {
+  display: inline-block;
+  margin-top: 18px;
+  font-weight: 700;
+  font-size: 14px;
+}

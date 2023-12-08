@@ -1,0 +1,33 @@
+/* background
+- thay đổi mày nền, ảnh nền của cả thẻ inline - block
+- background image: thiết lập ảnh nền 
+- background repeat: thiết lập chế độ lặp: repeat, no repeat, repeat x , repeat y
+- background position: thiết lập vị trí ban đầu của hình ảnh
+- background-size: thiêt lập kích thước image cover- contain
+- background-attachment: thiết lập backgpround khi kéo thanh cuộn
+- background: color image position / size repeat attachment
+- background clip: vùng hiển thị hình ảnh
+- background origin: xác định điểm bắt đầu hình ảnh
+
+
+*/
+/* body {
+    background-color: burlywood;
+    } */
+.box {
+  color: #fff;
+  height: 3000px;
+}
+
+body {
+  /* background-image: url("https://images.unsplash.com/photo-1632493462757-c492bbc3e00b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmF0JUUxJUJCJUE3YWx8ZW58MHx8MHx8fDA%3D");
+  background-color: #7b4f13;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  background-attachment: local; */
+  /* background-attachment: ; */
+
+  background: black
+    url("https://images.unsplash.com/photo-1632493462757-c492bbc3e00b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmF0JUUxJUJCJUE3YWx8ZW58MHx8MHx8fDA%3D")
+    no-repeat left top / contain fixed;
+}

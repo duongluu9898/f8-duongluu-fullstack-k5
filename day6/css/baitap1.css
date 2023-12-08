@@ -1,0 +1,139 @@
+/* common */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* container */
+.container {
+  width: 1200px;
+  height: 250px;
+  margin: 150px auto;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  margin: 30px 80px;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+}
+
+.navbar__icon {
+  padding: 14px 20px;
+  font-size: 1.1rem;
+  border-right: none;
+  cursor: pointer;
+}
+
+/* navbar list */
+.navbar__list--left {
+  display: flex;
+}
+
+.navbar__item {
+  border-left: 1px solid #ccc;
+  padding: 14px 14px;
+  font-size: 1.2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar__item:nth-child(5) {
+  border-right: 1px solid #ccc;
+}
+
+.navbar__item i {
+  margin-right: 8px;
+  font-size: 1.1rem;
+}
+
+.navbar__item .arrow__down {
+  margin-left: 4px;
+  font-size: 8px;
+}
+
+/* sub list */
+.sub__list {
+  position: absolute;
+  border: 1px solid #ccc;
+  bottom: -158px;
+  left: 0;
+  box-shadow: 0px 0px 6px 1px #ddd;
+  display: none;
+}
+
+.sub__item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 140px;
+  padding: 14px 18px;
+  color: #333;
+  list-style-type: none;
+  border-top: 1px solid #ddd;
+  margin-left: -38px;
+}
+
+.sub__list::before {
+  position: absolute;
+  content: "";
+  margin-top: -10px;
+  margin-left: -18px;
+
+  border-width: 4px 8px;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom: 8px solid #fff;
+}
+
+.sub__list::after {
+  position: absolute;
+  content: "";
+  margin-top: -145px;
+  margin-left: -40px;
+
+  border-width: 4px 60px;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.navbar__item:hover,
+.navbar__item:focus {
+  background: #2da5da;
+  outline: none;
+  color: #666;
+}
+
+.navbar__item:hover > i,
+.navbar__item:focus > i {
+  color: #fff;
+}
+
+.navbar__item:hover > span,
+.navbar__item:focus > span {
+  color: #fff;
+}
+
+.navbar__item:hover .sub__list,
+.navbar__item:focus .sub__list {
+  display: block;
+}

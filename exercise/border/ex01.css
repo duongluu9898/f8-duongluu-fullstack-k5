@@ -1,0 +1,23 @@
+.box {
+  margin: 100px auto;
+  width: 0;
+  height: 0;
+  /* border-width: 5px 20px 40px 80px;
+  border-style: solid dotted dashed double;
+  border-color: red green blue violet; */
+  /* border: red solid 10px; */
+  /* border-top: 30px solid #000;
+  border-right: 30px solid red;
+  border-top: 30px solid #000;
+  border-top: 30px solid #000; */
+
+  /* border-left-width: 30px;
+  border-left-color: red;
+  border-left-style: dashed; */
+  border-width: 400px;
+  border-style: solid;
+  border-color: #fff #fff blue #fff;
+  border-top-width: 0;
+  /* border-left-width: 0; */
+  border-radius: 10px;
+}

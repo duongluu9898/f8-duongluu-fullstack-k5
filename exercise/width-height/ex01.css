@@ -1,0 +1,43 @@
+/* 
+- width, height không áp dụng cho thẻ inline
+- tỉ lệ với thành phần cha
+- vw: chiều ngang
+- vh: chiều dọc
+- ngoại lệ: các thẻ inline-replace sử dụng được width height hoặc các thẻ liên quan tới form ( bới có sự tham gia của trình duyệt can thiệp)
+=> trình duyệt coi thẻ inline-replace như inline block
+
+- max-width
+- max-height
+- min-width
+- min-height
+
+*/
+/* 
+body {
+  height: 2000px;
+}
+.box {
+  width: 50%;
+  height: 100vh;
+  background: #aaa;
+}
+
+.main {
+  width: 100vw;
+  background: yellow;
+  height: 300px;
+} */
+.image {
+  width: 300px;
+  border: 1px solid red;
+  /* line-height: 0; */
+}
+
+.image img {
+  max-width: 100%;
+  min-width: 50%;
+}
+
+.image:hover {
+  filter: grayscale(50%);
+}
