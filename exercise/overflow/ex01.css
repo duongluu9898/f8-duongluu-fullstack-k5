@@ -1,0 +1,25 @@
+/* xử lí nội dung bị tràn ra ngoài:
+- overflow quyết định nội dung tràn ra ngoài như thế nào:
++ visible: giữ nguyên
++ ẩn đi: hidden
++ tạo thanh cuộn: scroll, auto
+=> scroll luôn tạo ra khu vực để chứa dù k tràn ra
+=> auto chỉ tạo ra khi thành phần con tràn r khỏi cha.
+
+từ khóa: scroll style css
+
+
+
+*/
+
+.box {
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+  overflow: auto;
+  /* overflow x, overflow y */
+}
+
+.box p {
+  width: 300px;
+}

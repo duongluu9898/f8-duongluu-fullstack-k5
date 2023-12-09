@@ -1,0 +1,77 @@
+/* 
+- với block thì pađing được 4 hướng
+- với inline thì được 2 hướng trái và phải
+- muốn sang 4 hướng thì xét inline-block
+
+- với margin cũng tương tự
+
+KHI MARGIN NẾU LÀ SỐ DƯƠNG, ÂM HẾT THÌ COSLLAPE
+CÓ SỐ ÂM THÌ CỘNG VÀO
+
+- key: marrgin collapsing
+
+*/
+
+.box {
+  width: 200px;
+  border: 1px solid red;
+  padding: 20px;
+  /* margin: 0 auto; */
+  margin-left: auto;
+  margin-right: auto;
+  /* width thẻ con nhỏ hơn thành phần cha */
+}
+
+/* .lists span {
+  border: 1px solid green;
+  padding: 30px 30px;
+  display: inline-block;
+}  */
+/* 
+* {
+  padding: 0;
+  margin: 0;
+}
+.content h2 {
+  border: 1px solid red;
+}
+
+.content h2:first-child {
+  margin-bottom: -10px;
+}
+
+.content h2:last-child {
+  margin-top: -20px;
+} */
+
+.content {
+  /* border: 1px solid red; */
+  /* display: inline-block; */
+  /* display: flex; */
+  /* position: absolute; */
+  /* position: fixed; */
+  background-color: green;
+  color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.content h2 {
+  /* margin: 30px 0; */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.box1 {
+  background: green;
+  width: 400px;
+  color: #fff;
+}
+
+.content1 {
+  padding-top: 100%;
+}

@@ -1,5 +1,4 @@
 /* common */
-
 * {
   margin: 0;
   padding: 0;
@@ -11,17 +10,25 @@ a {
   text-decoration: none;
 }
 
-.row {
-  background: #ebf5fe;
-  /* padding: 50px; */
-  padding: 30px;
+/* section */
+section {
+  width: 1200px;
+  height: 470px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
 }
 
+/* row */
 .row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0;
+
+  margin: 30px 100px;
+
+  background: #ebf5fe;
+  padding: 30px;
 }
 
 .item {
