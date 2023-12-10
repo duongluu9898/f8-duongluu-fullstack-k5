@@ -1,0 +1,108 @@
+/* common */
+html {
+  font-size: 62.5%;
+  font-family: "Asap", sans-serif;
+}
+
+@font-face {
+  font-family: SFU;
+  src: url(../fonts/SFUTradeGothic-BoldCondensedTwenty.woff2);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+}
+
+/* container */
+.container {
+  width: 1200px;
+  margin: 100px auto;
+}
+
+/* banner */
+.banner {
+  position: relative;
+
+  background: url(../image/ha-noi-melody-residences-cover.jpg);
+
+  height: 390px;
+  border-radius: 4px;
+}
+
+/* content */
+.content {
+  /* position */
+  position: absolute;
+  left: 156px;
+  top: 120px;
+
+  /* display & box model */
+  width: 470px;
+  padding: 34px 20px;
+  border-radius: 4px;
+
+  /* color */
+  background-color: #fff;
+
+  /* other */
+  opacity: 0.78;
+}
+
+.heading {
+  margin-top: -10px;
+  font-size: 2.4rem;
+  color: #bf4240;
+}
+
+.desc {
+  margin-top: -8px;
+  font-size: 1.3rem;
+  color: #3f3424;
+  line-height: 1.4;
+}
+
+.location i {
+  margin-right: 3px;
+}
+
+.location {
+  font-size: 1.4rem;
+}
+
+/* price */
+.price {
+  /* position */
+  position: absolute;
+  left: 500px;
+  top: 266px;
+
+  padding: 10px 20px;
+  border-radius: 4px;
+
+  /* display & box model */
+
+  /* text */
+  font-family: SFU;
+  font-size: 2.3rem;
+
+  /* color */
+  background: #dd5e56;
+  color: #fff;
+}

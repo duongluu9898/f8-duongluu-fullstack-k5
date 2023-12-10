@@ -43,6 +43,7 @@ section {
 
 .item:hover {
   border: 2px solid #ec847c;
+  animation: no;
 }
 
 .item__header {

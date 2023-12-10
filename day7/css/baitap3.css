@@ -1,0 +1,181 @@
+/* common */
+html {
+  font-size: 62.5%;
+  font-family: "Asap", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+}
+
+/* container */
+.container {
+  width: 1170px;
+  margin: 40px auto;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+/* menu */
+.menu {
+  height: 520px;
+  margin: 0 104px;
+}
+
+/* heading */
+h2 {
+  position: relative;
+  margin-top: 14px;
+
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+h2::after {
+  position: absolute;
+  content: "";
+  left: 324px;
+  top: 8px;
+
+  width: 630px;
+  height: 1px;
+  background-color: #ccc;
+}
+
+/* list */
+.list {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.item {
+  position: relative;
+
+  min-width: 80px;
+  padding: 0 14px;
+  border-radius: 999px;
+
+  background: #e4e4e4;
+
+  cursor: pointer;
+}
+
+.item:first-child {
+  background-color: #af7c38;
+}
+
+.item:first-child p {
+  color: #fff;
+}
+
+.item a p {
+  text-align: center;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-style: italic;
+
+  color: #000;
+}
+
+.item .site {
+  font-size: 1.15rem;
+  font-style: normal;
+  margin-top: 6px;
+}
+
+p + p {
+  margin-top: -6px;
+}
+
+/* district list */
+
+.district__list {
+  position: absolute;
+  margin-top: 24px;
+  margin-left: -14px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+
+  width: 100%;
+}
+
+.district__item {
+  width: 306px;
+  height: 192px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+.district__item:nth-child(1) {
+  background: url(../image/bg1.avif);
+}
+
+.district__item:nth-child(2) {
+  background: url(../image/bg2.1.avif);
+}
+
+.district__item:nth-child(3) {
+  background: url(../image/bg3.avif);
+}
+
+.district__item:nth-child(4) {
+  background: url(../image/bg4.avif);
+}
+
+.district__item:nth-child(5) {
+  background: url(../image/bg5.webp);
+}
+
+.district__item:nth-child(6) {
+  background: url(../image/bg6.avif);
+}
+
+.district__item a p {
+  margin-top: 24px;
+  font-size: 1.8rem;
+  text-align: left;
+  padding-left: 30px;
+  font-style: normal;
+}
+
+.district__item a p:last-child {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.district__item a span {
+  font-size: 1.4rem;
+}
+
+.district__item a p + p {
+  margin-top: 110px;
+}

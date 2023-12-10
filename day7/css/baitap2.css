@@ -1,0 +1,132 @@
+/* common */
+html {
+  font-size: 62.5%;
+  font-family: "Asap", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+}
+
+/* container */
+.container {
+  width: 1200px;
+  margin: 100px auto;
+}
+
+/* profile */
+.profile {
+  height: 320px;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+/* header */
+.header {
+  position: relative;
+}
+
+.background {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.logo {
+  position: absolute;
+  left: 44px;
+  top: 146px;
+
+  width: 120px;
+  padding: 40px 40px 10px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+
+  background: #fff;
+}
+
+.info {
+  position: absolute;
+  left: 260px;
+  top: 168px;
+
+  color: #fff;
+}
+
+.info__heading {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.info__desc {
+  display: flex;
+  margin-top: 6px;
+
+  font-size: 1.3rem;
+}
+
+p + p {
+  margin-left: 20px;
+}
+
+span {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* list */
+.list {
+  position: absolute;
+  display: flex;
+  right: 140px;
+}
+
+.item {
+  padding: 10px 12px;
+  font-size: 1.2rem;
+
+  margin-top: -4px;
+}
+
+.item a {
+  color: #000;
+  font-weight: 700;
+}
+
+.item:first-child a {
+  color: #dd5e56;
+}
+
+.item:first-child::after {
+  position: absolute;
+  left: 54px;
+  top: 28px;
+
+  content: "";
+  width: 64px;
+  height: 3px;
+
+  background: #dd5e56;
+}
