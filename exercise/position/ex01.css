@@ -1,0 +1,85 @@
+/* 
+
+position: fixed, relative, absolute, static
+- các thuộc tính mở rộng chỉ hoạt động khi có position ( trừ static)
+    + top. left right bottom z-index, inset
+    => w, h theo giá trị của cha
+- static là mặc định: xếp lần lượt trên dưới, trái phải
+- relative: tương đối với chính không gian mà nó chứa ban đầu
+- absolute: sắp cếp lại vị trí, giá trị mặc định ban đầu nhận body làm cha mặc định
+    + khi có cả left - right: 0 thì width căng ra. tương tự với top-bottom
+    => xây dựng lướp phủ + opacity
+    + nhận thẻ có relative gần nhất
+- fixed cố địn htheo mọi trường hợp: nhận body làm cha, cố định khi thanh cuộn di chuyển
+
+- z-index chỉ dùng được khi có positon: nên dùng relative
+
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 20000px;
+}
+
+.box {
+  border: 1px solid red;
+  width: 500px;
+  margin: 30px auto;
+  padding: 30px;
+  position: relative;
+}
+
+.box .content {
+  border: 1px solid green;
+  position: relative;
+}
+
+.box .content .item {
+  background-color: blueviolet;
+  color: #fff;
+  height: 50px;
+  width: 200px;
+  border: 1px solid #fff;
+}
+
+.box .content .item:nth-child(2) {
+  /* margin-top: 20px;
+  margin-left: 20px; */
+  position: relative;
+  left: 20px;
+  top: 20px;
+  z-index: 1;
+  /* position: absolute;
+  left: 50%;
+  top: 50%; */
+
+  /* width: auto;
+  height: auto;
+  background-color: #00000073; */
+
+  /* position: fixed;
+  bottom: 0;
+  right: 0; */
+}
+
+.box .content .item:nth-child(3) {
+  position: relative;
+  z-index: 2;
+}
+
+.box .content .item:nth-child(4) {
+  position: absolute;
+  width: auto;
+  height: auto;
+  inset: 0;
+  /* dùng thay cho 4 giá trị */
+}
+.box .content .item:nth-child(1) {
+  position: relative;
+  z-index: 4;
+}

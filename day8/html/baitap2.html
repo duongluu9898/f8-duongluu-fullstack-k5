@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart Mini</title>
+
+    <!-- embed fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- embed font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- link css  -->
+    <link rel="stylesheet" href="../css/baitap2.css" />
+  </head>
+  <body>
+    <section class="cart">
+      <!-- cart top -->
+      <div class="cart-top">
+        <h2 class="cart-top__heading">Shopping Cart</h2>
+
+        <span class="cart-top__icon"
+          ><i class="fa-solid fa-circle-xmark"></i
+        ></span>
+      </div>
+
+      <!-- cart item -->
+      <div class="cart-items">
+        <!-- cart item 1 -->
+        <article class="cart-item">
+          <!-- image -->
+          <div class="cart-item__img">
+            <img src="../img/iphone1.jpg" alt="iphone" />
+          </div>
+
+          <!-- desc -->
+          <div class="cart-item__desc">
+            <!-- desc name -->
+            <p class="cart-item__name">Iphone XS 15 Pro Max</p>
+
+            <div class="cart-row">
+              <!-- desc qnt -->
+              <div class="cart-item__qnt">
+                <i class="fa-solid fa-minus"></i>
+                1
+                <i class="fa-solid fa-plus"></i>
+              </div>
+
+              <!-- desc price -->
+              <div class="cart-item__price">1x$570</div>
+            </div>
+          </div>
+
+          <!-- icon -->
+          <span class="cart-item__icon">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </article>
+
+        <!-- cart item 2 -->
+        <article class="cart-item">
+          <!-- image -->
+          <div class="cart-item__img">
+            <img src="../img/iphone2.jpg" alt="iphone" />
+          </div>
+
+          <!-- desc -->
+          <div class="cart-item__desc">
+            <!-- desc name -->
+            <p class="cart-item__name">Iphone XS 15 Pro Max</p>
+
+            <div class="cart-row">
+              <!-- desc qnt -->
+              <div class="cart-item__qnt">
+                <i class="fa-solid fa-minus"></i>
+                1
+                <i class="fa-solid fa-plus"></i>
+              </div>
+
+              <!-- desc price -->
+              <div class="cart-item__price">1x$570</div>
+            </div>
+          </div>
+
+          <!-- icon -->
+          <span class="cart-item__icon">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </article>
+      </div>
+
+      <!-- cart subtotal -->
+      <div class="cart-subtotal">
+        <p class="cart-subtotal__label">Subtotal</p>
+        <p class="cart-subtotal__price">$920.00</p>
+      </div>
+
+      <!-- cart message -->
+      <div class="cart-message">Taxes and shipping calculated at checkout</div>
+
+      <!-- cart btn group -->
+      <div class="cart-btn-group">
+        <button class="cart-btn__view btn">View Cart</button>
+        <button class="cart-btn__add btn">Add to Cart</button>
+      </div>
+
+      <!-- cart ship -->
+      <div class="cart-ship">
+        <div class="cart-ship__icon">
+          <span>
+            <i class="fa-solid fa-truck-fast"></i>
+          </span>
+        </div>
+
+        <div class="cart-ship__message">Spend $ 499.00 to Free Shipping</div>
+      </div>
+    </section>
+
+    <!-- overlay -->
+    <div class="overlay"></div>
+  </body>
+</html>

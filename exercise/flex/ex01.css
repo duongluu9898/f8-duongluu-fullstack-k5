@@ -1,0 +1,36 @@
+/* 
+display: block, inline, inline-block, none
+
+
+- flex
+- inline-flex
+- grid
+- list-item
+- table
+- table-cell
+
+- visibile và opacity vẫn còn không gian, display none thì k
+
+
+*/
+
+.title {
+  display: inline;
+}
+
+.title:hover {
+  /* display: none; */
+  visibility: hidden;
+}
+
+.links {
+  font-size: 0;
+}
+
+.link {
+  height: 100px;
+  background: green;
+  color: #fff;
+  display: inline-block;
+  font-size: initial;
+}
