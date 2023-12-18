@@ -1,3 +1,20 @@
+/* cos 2 cách để xếp hạng
+- cách 1: chuyển h2 sang dạng list item
+- cách 2: dùng counter
+
+các bước tạo bộ đếm:
+- khởi tạo bọ đếm( tên là gì, ở đâu)
+- chạy bộ đếm( chạy bộ đếm gì, chạy ở đâu)
+- hiển thi jbộ đếm
+
+counter-reset => counter-increment => counter
+
+=> khởi tạo tại ngay cha của nó counter-reset
+
+
+
+*/
+
 * {
   padding: 0;
   margin: 0;
@@ -36,4 +53,32 @@
 
 .box ul li:hover::before {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEX///8XJUcACDnf4eYGHEO5vMUTIkXt7vEiLk7y8/UuOVYAADYVI0YAFz8AFT4OH0MAETyusrvCxcwAADPP0ddZYXaLkJ4AADBLU2pzeYqZnqpka34ADTttc4U6RF9GTmfN0NVUW3EoNFKeo64AADl4fo6bhtUPAAADeUlEQVR4nO3cjVbUMBCG4U4p/dm220UQRCsI4v3fogkHdRe22WRCDV/O91xB3yOe2WnaFgURERERERERERERERERERERERERERERERERRejOUl/B2pryukt9Detq2rm9SH0Rq2raui6/XKW+jBWZQpGpvM33T/W5UGTsv6a+krW8FIqUm0+pr2Udfwtl6r9lOTn+FZo/1SrHybFfKMNuzG9yHBSaxv4+t8nxqtD+d7xtUl/Uu3pTKLKdspocRwqlnnOaHMcKzZ/qzUM2k+N4oUj1lMvkWCoU2T3mMTmWC6Xus9g5HIV2cnzHnxzOQhnGEn5yuAtNY3kHPjlOFdr1+DP05DhdKEM1X6e+zAgehQbyzuFXaCYH7M7hWWgnxy/MyeFdKMNWfqa+Wg3/QrtztICTI6TQNF7iTY6wQrNz7NB2jtBCEbRzjvBCqUuoyaEotLcAgHYOVaHIuIWZHMpCoJ1DW4izc+gLzc4BcUIeUWjspo8/Obqowve5W3W2qqt2iCk0P3Lm2J2jexyrFU2Rgca2irtb1W2m6GtY2RC3c3SbqP8o/0cdc0IOUWh+5MzqyQFSaCaHdueAKVTvHDiFdufQnJAjFdoT8vCdA6tQs3OAFSp2DrhCs3NcBk0OvEL7bFV9nneh/ZHz8CPvQrtz+E4O1EL7Q85vcuAWynCz8flnxC30fSQXttD7sWrQwvHJe/GHLAx6vQGwMPAVFbzC0FUYrTDwRylc4dSHH2YgFdaqAymcwmE7qA4VYQrVjxSBFNb9nfaIBqJwUN8sBSmsxpij0k76ckVz/NmTZkIcOF/VRez54fDRX82MPAP2XuTTiTvH978Zk05MYcgNtXT0hWE3RdNRPxMVvkMkoixEeSCqUBbiPNRW6Ao1h4TphBfqDnrTCS0Ee0C4CC6M2SESCSqMeGgmnYDCqAef0vEujHx4LR3fwtgHENPxK4x/iDQdn0Ls19Y9ChEe5nY4+S43xgP5DicKgXaIJc5CqB1iiasQ6OUmh+VCqBfUHJYK8XaIJQuFcyYfpykWCvFe9nU4Uoj4wrbDm0LMl+4dXn9zD/TDCQ6HhbAfv3DYLwT+gInDXiHyR2gc/hSCf0jI4aUwgx1iyXNhFjvEElOYw0fZHJq2yuHDeg7NiHyXyUeT5YQgIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiKC8hvCN0Sgx2wafgAAAABJRU5ErkJggg==);
+}
+
+.songs {
+  width: 50%;
+  margin: 30px auto;
+  border: 1px solid red;
+
+  counter-reset: song-number;
+}
+
+.songs h2 {
+  /* display: list-item;
+  list-style: inside decimal-leading-zero; */
+  padding: 7px 0;
+  counter-increment: song-number;
+}
+.songs h2::before {
+  content: "#" counter(song-number);
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: green;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 5px;
 }

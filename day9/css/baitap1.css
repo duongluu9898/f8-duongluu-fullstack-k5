@@ -1,0 +1,158 @@
+/* common */
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+  /* font-family: 'Space Grotesk', sans-serif; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+}
+
+/* container */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* info */
+.info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* info left */
+.info-wrap {
+  display: flex;
+  gap: 50px;
+}
+
+.info-wrap + .info-wrap {
+  margin-top: 50px;
+}
+
+.info-wrap-left {
+  text-align: right;
+  margin-top: -30px;
+}
+
+.info__heading {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.info__desc {
+  font-size: 1.4rem;
+  width: 300px;
+  margin-top: -6px;
+}
+
+.info__btn {
+  background: #f3f3f3;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 9999px;
+}
+
+/* info wrap right */
+.info-wrap-right {
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.info-wrap-right::before {
+  position: absolute;
+  left: -20px;
+  top: 4px;
+
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #469469;
+
+  border-radius: 50%;
+}
+
+.info-wrap-right::after {
+  position: absolute;
+  left: -17px;
+  top: 20px;
+
+  content: "";
+  width: 1px;
+  height: 108px;
+  background: #aaa;
+  /* border: 1px solid #000; */
+}
+
+/* info right */
+.info-right {
+}
+
+.info-wrap-img {
+  position: relative;
+}
+
+.info__img--large {
+  width: 300px;
+  height: 340px;
+  object-fit: cover;
+}
+
+.info__img--small {
+  position: absolute;
+  top: 100px;
+  left: -100px;
+
+  background-image: url(../img/offcie1.jpg);
+  width: 180px;
+  height: 300px;
+  background-size: cover;
+}
+
+.background-img {
+  position: absolute;
+  inset: 8px;
+  background: #445db1;
+}
+
+.background-img span {
+  position: absolute;
+  display: inline-block;
+}
+
+.background-img span:first-child {
+  font-size: 4.2rem;
+  top: 180px;
+  right: 20px;
+  font-weight: 900;
+
+  background: url(../img/offfice3.jpg) center / cover text;
+  -webkit-text-fill-color: transparent;
+}
+
+.background-img span:last-child {
+  font-size: 1.2rem;
+  top: 230px;
+  right: 20px;
+  color: #ccc;
+}

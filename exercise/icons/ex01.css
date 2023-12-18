@@ -1,0 +1,158 @@
+/* .box h2::before {
+  font-family: "Font Awesome 6 Brands";
+}
+
+.box h2.facebook::before {
+  content: "\f39e";
+}
+
+.box h2.twitter::before {
+  content: "\e61b";
+}
+
+.box h2.instagram::before {
+  content: "\f16d";
+}
+
+h2 {
+  margin-left: 40px;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  margin: 100px auto;
+  border: 1px solid #000;
+}
+
+/* .row {
+  display: flex;
+  justify-content: space-around;
+
+  margin: 20px;
+}
+
+.col-left .icon-checks::before {
+  content: "";
+  display: inline-block;
+
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+
+  border: 1px solid green;
+} */
+
+/* .col-right .icon-checked::before {
+  margin-top: -8px;
+  content: "";
+  display: inline-block;
+
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+
+  background: green;
+  border: 1px solid green;
+  text-align: center;
+}
+
+.col-right .wrap {
+  text-align: center;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid green;
+  border-radius: 50%;
+} */
+
+label {
+  display: block;
+}
+
+.radio label span {
+  position: relative;
+}
+
+.radio label span::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid green;
+  border-radius: 50%;
+  margin-right: 2px;
+}
+
+.radio label span::after {
+  position: absolute;
+  content: "";
+  display: none;
+  width: 8px;
+  height: 8px;
+  background: green;
+  border-radius: 50%;
+  left: 3px;
+  top: 3.3px;
+}
+
+.radio label input:checked + span::after {
+  display: inline-block;
+}
+
+.radio label input:disabled + span::after {
+  background: gray;
+}
+
+.radio label input:disabled + span::before {
+  border-color: gray;
+}
+
+/* checkbox */
+.checkbox label span {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox label span::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid green;
+  margin-right: 2px;
+}
+
+.checkbox label span::after {
+  content: "";
+  display: none;
+  width: 8px;
+  height: 4px;
+  border: 2px solid;
+  border-color: transparent transparent green green;
+  font-size: 0.7rem;
+  font-weight: bold;
+  rotate: -45deg;
+  position: absolute;
+  left: 2px;
+  top: 0.4px;
+}
+
+.checkbox label input:checked + span::after {
+  display: block;
+}
+
+.checkbox label input:disabled + span::before {
+  border-color: gray;
+}
+
+.checkbox label input:disabled + span::after {
+  border-color: transparent transparent gray gray;
+}

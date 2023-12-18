@@ -1,0 +1,89 @@
+/* common */
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+}
+
+/* container */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* service */
+.service {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  row-gap: 40px;
+}
+
+/* item */
+.item {
+  width: 300px;
+  padding: 40px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+/* 
+.item:hover {
+  background: url(../img/doctor.jpg) center/cover;
+}
+
+.item:hover .item-icon {
+  display: none;
+}
+
+.item:hover .item-body {
+  translate: 0 -60px;
+  color: #fff;
+}
+
+.item:hover .item-body {
+  border: 1px solid white;
+} */
+
+/* icon */
+.item-icon {
+  font-size: 4.2rem;
+  color: #c8aa9f;
+}
+
+/* item heading */
+.item__heading {
+  font-size: 2.2rem;
+}
+
+/* item desc */
+.item__desc {
+  color: #8c8c8d;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.item-row {
+  display: none;
+}
