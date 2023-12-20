@@ -10,6 +10,24 @@ flexible box module: là kĩ thuật chia layout trong css
 => display: flex, inline-flex
 => justify-content: căn chỉnh item theo hướng song song với trục chính
 => flex-direction: đièu chỉnh hướng của trục chính: row( mặc định) row-reverse , column column-reverse
+=> align-items: căn chỉnh theo trục cross: giá trị mặc định stretch, flex-start, flex-end, center
+  căn chỉnh theo content, mặc định content bằng container
+=> flex-wrap: wrap các item nếu kích thước vượt quá kth container: mặc định no-wrap, wrap, wrap-reverse
+= align-content; mặc dịnh stretch căn chỉnh các item theo hướng cross, align-item căn chỉnh item theo các hàng của items
+  nếu flex-direction: row thì căn chỉnh hàng, nếu là column thì căn chỉnh cột, thuộc tính này có tác dụng nếu có nhiều hàng hoặc nhiều cột.
+  giá trị giống với justify-content
+=> gap: khoảng các giữ các item: 4 phía k bị gap. gap 10 20: 10 của row, 20 của column
+
+- các thuộc tính trong nhóm flex-item:
++ flex-grow: number: nhận gtrị số nguyên, mặc định là 0, giữ kích thước gốc của item
++ flex-shrink: mặc định 1- co item lại, 0 dãn ra, lớn hơn 1 thì co vào 
++ flex-basis: thiết lập kích thước ban đầu, theo chiều ngang hoặc dọc( tự động chuyển theo flex direction) 
+  bị chặn bởi min-width, max-width, min-max height => width, height thì k thắng được
+
++ flex gộp: grow shrink basic 0 1 auto => đây là mặc định
++ order: mặc định 0
++ align-self: căn chỉnh 1 item, có đầy đủ tính chất align-items
+
 
 - inline-flex
 - grid
@@ -21,7 +39,7 @@ flexible box module: là kĩ thuật chia layout trong css
 
 
 */
-
+/* 
 * {
   padding: 0;
   margin: 0;
@@ -34,10 +52,10 @@ flexible box module: là kĩ thuật chia layout trong css
 
 .title:hover {
   /* display: none; */
-  visibility: hidden;
-}
+/* visibility: hidden; */
+/* } */
 
-.links {
+/* .links {
   font-size: 0;
 }
 
@@ -47,24 +65,52 @@ flexible box module: là kĩ thuật chia layout trong css
   color: #fff;
   display: inline-block;
   font-size: initial;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .products {
   margin: 100px auto;
-  width: 800px;
-  height: 400px;
+  width: 600px;
+  height: 300px;
   border: 1px solid green;
   border-radius: 4px;
   display: flex;
-  justify-content: flex-end;
+  align-items: flex-start;
+  /* flex-wrap: wrap; */
   /* justify-content: space-evenly; */
-  flex-direction: column-reverse;
 }
 .products .item {
-  padding: 10px;
+  /* width: calc(100% / 5 - 15px); */
   /* margin: 10px; */
   background: green;
   color: #fff;
+  border-radius: 4px;
   border: 1px solid #fff;
-  border-radius: 8px;
+  flex-basis: 120px;
+  /* flex-grow: 1; */
+}
+
+/* .products .item:nth-child(1) {
+  order: 4;
+}
+
+.products .item:nth-child(2) {
+  order: 1;
+}
+
+.products .item:nth-child(3) {
+  order: 3;
+}
+
+.products .item:nth-child(4) {
+  order: 2;
+} */
+
+.products .item:nth-child(4) {
+  align-self: flex-end;
 }

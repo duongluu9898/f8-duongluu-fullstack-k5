@@ -1,0 +1,30 @@
+/* transition
+- nhóm thuộc tính giúp thiệt lập thời gian chuyển động của 1 thành phần
+=> thiết lập hiệu ứng
+=> chỉ áp dụng với css có giá trị là số: width, height, color, opacity...
+- các thuộc tính: all, mỗi thuộc tính cách nhau bởi dấu phẩy
+- transition-duration: number + unit: thời gian chuyển động (s, ms)
+- transition-delay: number + delay: thiết lập delay trước khi hiệu ứng chuyển động
+- transition-timing-function: rthiết lập tốc độ chuyển độgn theo quãng đườnng
++ linear: đều nhau
+- transition: property duration delay timing-function;
+
+
+
+
+*/
+.box h2 {
+  border: 1px solid red;
+  height: 40px;
+  color: rgb(196, 56, 56);
+  transition-property: padding-left, color, height;
+  transition-duration: 4s;
+  /* transition-delay: 0.3s; */
+  transition-timing-function: cubic-bezier(0.2, -2, 0.8, 2);
+}
+
+.box h2:hover {
+  padding-left: 100px;
+  color: green;
+  height: 60px;
+}
