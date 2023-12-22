@@ -1,0 +1,132 @@
+/* common */
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+}
+
+/* container */
+.container {
+  /* width: 1280px; */
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  background: #05a8f4;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* navbar */
+.navbar {
+  margin-top: 0 auto;
+  padding: 14px 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar i {
+  font-size: 3rem;
+
+  /* color: #0ca4f7; */
+  color: #05a8f4;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.navbar .arrow {
+  display: none;
+}
+
+/* toggle icon */
+
+input[id="toggle"]:checked ~ label .menu {
+  display: none;
+}
+
+input[id="toggle"]:checked ~ label .arrow {
+  display: block;
+}
+
+/* navbar list */
+.navbar-list {
+  margin-top: 10px;
+  /* display: none; */
+}
+
+.navbar-item a {
+  color: #05a8f4;
+  /* color: #fff; */
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+.navbar-item + .navbar-item {
+  margin-top: 14px;
+}
+
+.group::after {
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+
+  content: "";
+
+  width: 158px;
+  height: 158px;
+  border-radius: 50%;
+  background: #fff;
+  left: -79px;
+  top: -79px;
+  transition: 0.4s;
+}
+
+#toggle:checked ~ .group::after {
+  scale: 40;
+}
+
+/* header body */
+.header-body {
+  position: absolute;
+  right: 150px;
+  top: 200px;
+  color: #fff;
+}
+
+.header-body h1 {
+  font-size: 4.8rem;
+}
+
+.header-body p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.header-body span {
+  font-size: 2.8rem;
+}

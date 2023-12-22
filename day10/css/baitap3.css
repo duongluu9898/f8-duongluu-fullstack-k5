@@ -1,0 +1,155 @@
+/* common */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  background: rgb(238, 228, 228);
+}
+
+.item {
+  position: relative;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.item:hover {
+  overflow: visible;
+  translate: 0 30px;
+}
+
+.item:before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  bottom: -90%;
+
+  width: 400px;
+  height: 200px;
+  border-radius: 50%;
+
+  background: rgba(39, 38, 38, 0.55);
+
+  scale: 1 0.22;
+  filter: blur(30px);
+  transition: 0.3s;
+}
+
+.item:hover::before {
+  scale: 0.8 0.22;
+  bottom: -80%;
+}
+
+.box {
+  width: 0;
+  height: 0;
+
+  border-style: solid;
+  transition: 0.4s;
+}
+
+/* box 1 */
+.box-1 {
+  position: relative;
+  z-index: 4;
+  border-top: 90px solid transparent;
+  border-right: 180px solid #d46156;
+  border-bottom: 90px solid #af4b42;
+  border-left: 180px solid transparent;
+}
+
+/* box 2 */
+
+.box-2 {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+
+  border-top: 90px solid transparent;
+  border-right: 180px solid transparent;
+  border-bottom: 90px solid #853933;
+  border-left: 180px solid #c05147;
+}
+
+/* box 3 */
+.box-3 {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+
+  border-top: 90px solid #b95b52;
+  border-right: 180px solid transparent;
+  border-bottom: 90px solid transparent;
+  border-left: 180px solid transparent;
+}
+
+/* box 4 */
+.box-4 {
+  position: absolute;
+  z-index: 3;
+  top: -100%;
+
+  transform: rotateX(180deg);
+  transform-origin: bottom;
+
+  border-top: 90px solid transparent;
+  border-right: 180px solid transparent;
+  border-bottom: 90px solid #db695e;
+  border-left: 180px solid transparent;
+
+  transition-delay: 0.4s;
+}
+
+.item:hover .box-4 {
+  z-index: 1;
+  transform: rotateX(0);
+}
+
+/* box 5 */
+
+.box-5 {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+
+  transform-origin: top;
+  rotate: 180deg;
+  translate: -50%;
+  width: 260px;
+  height: 50px;
+
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.item:hover .box-5 {
+  height: 200px;
+  transition-delay: 0.4s;
+}
