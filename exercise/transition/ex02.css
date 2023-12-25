@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  display: block;
+  position: relative;
+
+  margin: 100px auto;
+  border: 0;
+  width: 400px;
+  height: 200px;
+  border-radius: 999px;
+
+  background: green;
+  z-index: 99;
+
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  transition: 2s ease;
+  transition-property: left;
+
+  left: 0;
+  right: 100%;
+  background: #fff;
+} */
+
+span {
+  display: block;
+  position: absolute;
+  width: 200px;
+  min-width: 200px;
+  height: 200px;
+  top: 0;
+  left: 0;
+  /* right: 0; */
+  border-radius: 50%;
+  background: red;
+
+  transition: 1s ease;
+  transition-property: left;
+  z-index: 100;
+}
+.btn:hover span {
+  left: 50%;
+}

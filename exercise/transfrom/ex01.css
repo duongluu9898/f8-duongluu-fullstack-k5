@@ -1,0 +1,47 @@
+/* 
+- thay đổi hình dạng của 1 thẻ html
+transform: rotate scale;     
+
++ xoay
+    -rotateX, rotate, rotateY(angle)
+=> được viết riêng
+
+
++ phóng to, thu nhỏ
+    scale(x, y) để 1 giá trị thì x=y
+    => được viết riêng
+
++ nghiêng: skew 
+    skew(x, y)
+
+
++ di chuyển
+
+
+
+*/
+
+.wrap {
+  padding: 30px;
+  border: 1px solid red;
+}
+
+.box {
+  font-size: 70px;
+  width: 300px;
+  height: 300px;
+  margin: 100px auto;
+  color: #fff;
+  background: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: all 1s linear;
+}
+
+.wrap:hover .box {
+  /* transform: rotatey(180deg); */
+  /* transform: scale(3, 0.5); */
+  transform: skew(-30deg, -30deg);
+}
