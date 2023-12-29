@@ -15,7 +15,8 @@ transform: rotate scale;
     skew(x, y)
 
 
-+ di chuyển
++ di chuyển: translate(x,y), translateX, translateY
+nếu dùng % thì translate theo kích thước của nó, relative thì theo cha
 
 
 
@@ -38,10 +39,15 @@ transform: rotate scale;
   justify-content: center;
   border-radius: 10px;
   transition: all 1s linear;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .wrap:hover .box {
   /* transform: rotatey(180deg); */
   /* transform: scale(3, 0.5); */
-  transform: skew(-30deg, -30deg);
+  /* transform: skew(-30deg, -30deg); */
+  top: 100px;
+  left: 100px;
 }

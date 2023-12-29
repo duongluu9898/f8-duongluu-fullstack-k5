@@ -1,0 +1,30 @@
+/* 
+- đổ bóng khối: box-shadow
+- đổ bóng chữ: text-shadow
+
+
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  margin: 30px auto;
+  /* background: green; */
+  /* box-shadow: 0 0 10px 5px red, 0 0 15px 10px green; */
+}
+
+.box .content {
+  font-size: 5rem;
+  color: #fff;
+
+  text-shadow: 0 0 1px #000, 0 0 1px #000, 0 0 1px #000, 0 0 1px #000,
+    0 0 1px #000, 0 0 1px #000, 0 0 1px #000, 0 0 1px #000, 0 0 1px #000,
+    0 0 1px #000;
+}

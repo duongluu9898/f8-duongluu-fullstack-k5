@@ -1,0 +1,39 @@
+/* 
+- biến toàn cục và biến cục bộ ( global - local variable)
+
+    + toàn cục sử dụng bất kì selector nào
+    :root
+
+    + cục bộ: chỉ sử dụng trong selector cụ thể đó và con nào đó. 
+    khai báo tại selector cụ thể.
+
+*/
+
+:root {
+  --primary-color: green;
+  --secondary-color: red;
+  --font-family: Roboto, sans-serif;
+  --font-size: 1.6rem;
+  --text-color: #333;
+}
+
+.box .content {
+  --primary-color: blue;
+}
+
+.box .content h1 {
+  color: var(--primary-color);
+}
+
+.box .content h2 {
+  color: var(--secondary-color);
+  border: 3px solid var(--secondary-color);
+}
+
+.box .content h2:hover {
+  --secondary-color: #000;
+}
+
+.box h3 {
+  color: var(--primary-color);
+}

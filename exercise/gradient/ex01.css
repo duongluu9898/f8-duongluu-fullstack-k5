@@ -1,0 +1,25 @@
+/* 
+background gradient
+- linear gradient: xuất phát từ 1 phía
+    to right, to bottom, to left, to top
+    to bottom right, .....
+    angle: giá trị độ mong muốn
+    hướng đi của dải màu
+- radial gradient: xuất phát từ tâm
+
+
+*/
+
+.box {
+  border-radius: 50px;
+  width: 400px;
+  height: 400px;
+
+  background: rgb(34, 193, 195);
+  background: radial-gradient(
+    circle,
+    rgb(38, 209, 67) 0%,
+    rgb(119, 190, 147) 45%
+  );
+  margin: 100px auto;
+}

@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* nên csss lại thẻ img
+
+img {
+    max-width: 100%; 
+    height: auto;
+    display: block
+} 
+
+*/
+
+body {
+  background-image: url(https://media.istockphoto.com/id/1479176238/photo/wind-turbine-in-california.webp?b=1&s=170667a&w=0&k=20&c=-jyNuNFcUF_fb-unPrg16TBNt94PpHY9He12v3KG9NE=);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+i {
+  color: #fff;
+  padding: 20px;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-left {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+}
+
+.icon-right {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  translate: -100% -50%;
+}
+
+.dots {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dots span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.dots span.active {
+  background: gold;
+}
