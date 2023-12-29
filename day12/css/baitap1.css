@@ -126,9 +126,9 @@ select {
 }
 
 .tab-switch-btn.active {
-  color: #3e3e3e;
+  /* color: #3e3e3e;
   background-color: #fff;
-  cursor: auto;
+  cursor: auto; */
 }
 
 .tab-switch-btn:first-child {
@@ -151,7 +151,40 @@ select {
   top: 0;
 }
 
+.login-form,
+.register-form {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+  position: absolute;
+  left: 0px;
+  transition: all 0.6s ease-in-out 0s;
+  text-align: center;
+}
+
+#register:checked ~ .landing-form .login-form,
+#login:checked ~ .landing-form .register-form {
+  transform: translate(50%, 0px);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  position: absolute;
+  left: 0px;
+  transition: all 0.6s ease-in-out 0s;
+}
+
+#login:checked ~ .landing-info .tab-switch .login-btn,
+#register:checked ~ .landing-info .tab-switch .register-btn {
+  color: #3e3f5e;
+  background-color: #fff;
+  cursor: auto;
+}
+
 /* LOGIN FORM */
+.login-form {
+}
+
 .form-box {
   width: 360px;
   padding: 64px;
@@ -217,7 +250,8 @@ select {
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="email"] {
   height: 52px;
   padding: 0 18px;
 
@@ -365,5 +399,25 @@ svg {
 
 /* REGISTER FORM */
 .register-form {
-  display: none;
+}
+
+.register-form .form-box__title {
+  margin-top: -50px;
+}
+
+.register-form .button {
+  background-color: #23d2e2;
+}
+
+.form-text {
+  margin-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #3e3f5e;
+  line-height: 1.6;
+}
+
+.form-text a {
+  color: #00c7d9;
+  font-weight: 600;
 }
