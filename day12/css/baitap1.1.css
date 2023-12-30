@@ -38,8 +38,8 @@ select {
   justify-content: center;
   background: url(../image/landing-background.jpg) no-repeat 0;
 
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-size: cover;
   gap: 80px;
 
@@ -161,6 +161,7 @@ select {
 
 .login-form,
 .register-form {
+  position: relative;
   opacity: 1;
   z-index: 2;
 
@@ -178,7 +179,7 @@ select {
 #register:checked ~ .landing-form .login-form,
 #login:checked ~ .landing-form .register-form {
   opacity: 0;
-  z-index: 1;
+  z-index: 2;
 
   transition: transform 0.3s ease-in-out;
 }
