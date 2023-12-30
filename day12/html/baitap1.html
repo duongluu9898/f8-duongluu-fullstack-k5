@@ -19,12 +19,13 @@
     />
 
     <!-- link css -->
-    <link rel="stylesheet" href="../css/baitap1.css" />
+    <link rel="stylesheet" href="../css/baitap1.1.css" />
     <title>Vikinger | Home</title>
   </head>
   <body>
     <!-- landing -->
     <div class="landing">
+      <div class="landing-deco"></div>
       <!-- input action -->
       <input type="radio" id="login" name="action" checked hidden />
       <input type="radio" id="register" name="action" hidden />
@@ -87,8 +88,8 @@
             <div class="form-row">
               <div class="form-item">
                 <div class="form-input">
-                  <label for="login-user">Username or Email</label>
                   <input type="text" id="login-user" name="login-user" />
+                  <label for="login-user">Username or Email</label>
                 </div>
               </div>
             </div>
@@ -97,12 +98,12 @@
             <div class="form-row">
               <div class="form-item">
                 <div class="form-input">
-                  <label for="login-password">Password</label>
                   <input
                     type="password"
                     id="login-password"
                     name="login-password"
                   />
+                  <label for="login-password">Password</label>
                 </div>
               </div>
             </div>
@@ -227,12 +228,12 @@
             <div class="form-row">
               <div class="form-item">
                 <div class="form-input">
-                  <label for="register-email">Your Email</label>
                   <input
                     type="email"
                     id="register-email"
                     name="register-email"
                   />
+                  <label for="register-email">Your Email</label>
                 </div>
               </div>
             </div>
@@ -241,12 +242,12 @@
             <div class="form-row">
               <div class="form-item">
                 <div class="form-input">
-                  <label for="register-username">Username</label>
                   <input
                     type="text"
                     id="register-username"
                     name="register-username"
                   />
+                  <label for="register-username">Username</label>
                 </div>
               </div>
             </div>
@@ -255,12 +256,12 @@
             <div class="form-row">
               <div class="form-item">
                 <div class="form-input">
-                  <label for="register-password">Password</label>
                   <input
                     type="password"
                     id="register-password"
                     name="register-password"
                   />
+                  <label for="register-password">Password</label>
                 </div>
               </div>
             </div>
@@ -269,12 +270,12 @@
             <div class="form-row">
               <div class="form-item">
                 <div class="form-input">
-                  <label for="register-password-repeat">Repeat Password</label>
                   <input
                     type="password"
                     id="register-password-repeat"
                     name="register-password-repeat"
                   />
+                  <label for="register-password-repeat">Repeat Password</label>
                 </div>
               </div>
             </div>
@@ -304,7 +305,7 @@
                     </svg>
                   </div>
 
-                  <label for="register-newsletter"
+                  <label class="label" for="register-newsletter"
                     >Send me news and updates via email</label
                   >
                 </div>

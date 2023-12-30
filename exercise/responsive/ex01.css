@@ -1,0 +1,98 @@
+/* 
+## khái niệm
+- thiết kế web đáp ứng
+- dựa vào kích thước trình duyệt để thay đổi giao diện thích ứng
+- còn có adaptive để thiết kế
+
+## breakpoint
+- điểm dừng mà tại đó giao diện thay đổi.( KÍCH THƯỚC MÀN HÌNH)
+- ví dụ: 
+*1400
+*1200
+*992
+*768
+*576
+
+LƯU Ý: 
+- không có breakpoint chuẩn trong các dự án.
+- breakpoint dựa vào cấu trúc giao diện dự án
+- tip: dựa vào vào frame css phổ biến rồi phát triển thêm.
+
+## các cách responsive
+- desktop first
+- mobile first
+
+## media query 
+- dựa vào breakpoint
+- dựa vào các responsive: desktop hay mobile first
+
+## desktop first
+
+@media screen and (max-width: 1399px) {
+    css
+}
+
+@media screen and (max-width: 1199px) {
+    css
+}
+.....................................
+lưu Ý: viết đúng thứ tự media query.
+
+## mobile first
+@media screen and (max-width: 575px) {
+    css
+}
+=> có thể bỏ breakpoint này để viết sẵn ra ngoài.
+
+@media screen and (min-width: 576px) {
+    css
+}
+
+@media screen and (min-width: 768px) {
+    css
+}
+
+@media screen and (min-width: 992px) {
+    css
+}
+
+@media screen and (min-width: 1200px) {
+    css
+}
+
+@media screen and (min-width: 1400px) {
+    css
+}
+
+## meta viewport
+
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: green;
+}
+
+@media screen and (max-width: 1199px) {
+  body {
+    color: red;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    color: blueviolet;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .box p {
+    display: none;
+  }
+}
