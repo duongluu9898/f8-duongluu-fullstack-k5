@@ -784,47 +784,85 @@ select {
   display: flex;
   padding: 30px 0;
   justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
+}
+
+@media screen and (max-width: 991px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer-logo__wrap {
   padding: 0 12px;
   width: 350px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 60px;
+}
+
+@media screen and (max-width: 991px) {
+  .footer-logo__wrap .logo {
+    margin-right: -50px;
+  }
+
+  .footer-logo__wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo__wrap img {
+  }
 }
 
 .logo-text {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 26px;
-  text-align: center;
-  margin-top: 20px;
 
   color: #676767;
 }
 
+@media screen and (max-width: 991px) {
+  .logo-text {
+    width: 100%;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
 .footer-row {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex: 1;
-  flex-direction: column;
-  text-align: center;
-  margin-top: 30px;
+}
+
+@media screen and (max-width: 991px) {
+  .footer-row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .footer-content {
+    text-align: center;
+    margin-top: 30px;
+  }
 }
 
 .footer-content__title {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 20px;
-  padding-left: 40px;
-  text-align: center;
+  /* padding-left: 40px; */
+  text-align: left;
 
   color: #2e2e2e;
+}
+
+@media screen and (max-width: 991px) {
+  .footer-content__title {
+    text-align: center;
+  }
 }
 
 .footer-content__list a {
@@ -842,4 +880,35 @@ select {
   max-width: 270px;
 
   color: #888;
+}
+
+/* footer bottom */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 0 30px 0;
+  margin-top: 50px;
+}
+
+.footer-copyright {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 24px;
+
+  color: #8c8c8c;
+}
+
+.footer-condition {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-condition__link {
+  font-size: 1.4rem;
+  line-height: 24px;
+  font-weight: 500;
+
+  color: #747474;
 }
