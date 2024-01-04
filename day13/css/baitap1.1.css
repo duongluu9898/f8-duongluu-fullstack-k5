@@ -494,6 +494,9 @@ select {
 }
 
 /* feature */
+.feature {
+  padding: 50px 0;
+}
 .feature__wrap {
   display: flex;
 }
@@ -525,7 +528,7 @@ select {
   flex-direction: column;
   justify-content: center;
   width: 40%;
-  padding: 0 12px;
+  padding: 50px 12px;
 }
 
 @media screen and (max-width: 991px) {

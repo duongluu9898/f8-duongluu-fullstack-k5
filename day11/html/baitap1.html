@@ -18,6 +18,9 @@
       rel="stylesheet"
     />
 
+    <!-- link grid css -->
+    <link rel="stylesheet" href="../css/grid.css" />
+
     <!-- link css -->
     <link rel="stylesheet" href="../css/baitap1.css" />
     <title>Grover</title>
@@ -25,13 +28,14 @@
   <body>
     <!-- header -->
     <header class="header">
-      <div class="container">
-        <!-- navbar -->
-        <nav class="navbar">
+      <!-- navbar -->
+      <nav class="navbar">
+        <div class="container">
           <div class="navbar__inner">
             <!-- logo -->
             <img src="../image/logo.svg" alt="Grover" class="logo" />
 
+            <!-- navbar right -->
             <div class="navbar__right">
               <!-- navbar list -->
               <ul class="navbar__list">
@@ -54,54 +58,64 @@
                 </span>
               </div>
             </div>
+            <span class="navbar__icon">
+              <i class="fa-solid fa-bars"></i>
+            </span>
           </div>
-        </nav>
-        <!-- end navbar -->
+        </div>
+      </nav>
+      <!-- end navbar -->
 
-        <div class="header__inner">
-          <!-- header left -->
-          <div class="header-left">
-            <!-- header left top -->
-            <div class="header-left__top">
-              <span>More than Faster</span>
-              <img src="../image/strawberry.svg" alt="" />
-            </div>
+      <div class="header__wrap">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6">
+              <!-- header left -->
+              <div class="header-left">
+                <!-- header left top -->
+                <div class="header-left__top">
+                  <span>More than Faster</span>
+                  <img src="../image/strawberry.svg" alt="" />
+                </div>
 
-            <!-- header left heading -->
-            <h1 class="header-left__heading">
-              Groceries delivered in as little as <span>2 hours</span>
-            </h1>
+                <!-- header left heading -->
+                <h1 class="header-left__heading">
+                  Groceries delivered in as little as <span>2 hours</span>
+                </h1>
 
-            <!-- header left desc -->
-            <p class="header-left__desc">
-              Grocen atssures fresh grocery every morning to your family without
-              getting out in this pandemic.
-            </p>
+                <!-- header left desc -->
+                <p class="header-left__desc">
+                  Grocen atssures fresh grocery every morning to your family
+                  without getting out in this pandemic.
+                </p>
 
-            <!-- header left row -->
-            <div class="header-left__row">
-              <button class="header-left__btn btn">Order Now</button>
+                <!-- header left row -->
+                <div class="header-left__row">
+                  <button class="header-left__btn btn">Order Now</button>
 
-              <div class="header-left__process">
-                <a href="#!">
-                  <img src="../image/button-play.svg" alt="" />
-                </a>
-                <button class="header-left__process--btn btn">
-                  Order Process
-                </button>
+                  <div class="header-left__process">
+                    <a href="#!">
+                      <img src="../image/button-play.svg" alt="" />
+                    </a>
+                    <button class="header-left__process--btn btn">
+                      Order Process
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- header right -->
-          <div class="header-right">
-            <img src="../image/header-img.png" alt="" />
+            <div class="col-sm-12 col-md-12 col-lg-6">
+              <!-- header right -->
+              <div class="header-right">
+                <img src="../image/header-img.png" alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- service -->
     <section class="service">
       <div class="container">
         <div class="service__inner">
@@ -167,26 +181,30 @@
     <!-- feature 1 -->
     <section class="feature">
       <div class="container">
-        <div class="feature__wrap">
-          <!-- feature image -->
-          <div class="feature__img">
-            <img src="../image/feat.png" alt="feature" />
+        <div class="row">
+          <div class="col-sm-12 col-lg-7">
+            <!-- feature image -->
+            <div class="feature__img">
+              <img src="../image/feat.png" alt="feature" />
+            </div>
           </div>
 
-          <!-- feature content -->
-          <div class="feature-content">
-            <div class="feature-content__title">WHY CHOOSE US</div>
+          <div class="col-sm-12 col-lg-5">
+            <!-- feature content -->
+            <div class="feature-content">
+              <div class="feature-content__title">WHY CHOOSE US</div>
 
-            <h2 class="feature-content__heading">
-              Find Favorites And Discover New Ones
-            </h2>
+              <h2 class="feature-content__heading">
+                Find Favorites And Discover New Ones
+              </h2>
 
-            <p class="feature-content__desc">
-              At vero eos et accusamus et iusto odio dignissimos ducimus
-              blanditiis praesen voluptatum deleniti.
-            </p>
+              <p class="feature-content__desc">
+                At vero eos et accusamus et iusto odio dignissimos ducimus
+                blanditiis praesen voluptatum deleniti.
+              </p>
 
-            <button class="feature-content__btn btn">Explore Now</button>
+              <button class="feature-content__btn btn">Explore Now</button>
+            </div>
           </div>
         </div>
       </div>
@@ -195,26 +213,30 @@
     <!-- feature 2 -->
     <section class="feature-2">
       <div class="container">
-        <div class="feature__wrap">
-          <!-- feature content -->
-          <div class="feature-content">
-            <div class="feature-content__title">HOME DELIVERY</div>
-
-            <h2 class="feature-content__heading">
-              Sit At Home We Will Take Care Your Order
-            </h2>
-
-            <p class="feature-content__desc">
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui
-              blanditiis praesentium voluptatum deleniti atque corrupti quos
-            </p>
-
-            <button class="feature-content__btn btn">Explore Now</button>
+        <div class="row feature-reverse">
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <!-- feature image -->
+            <div class="feature__img">
+              <img src="../image/feat2.png" alt="feature" />
+            </div>
           </div>
 
-          <!-- feature image -->
-          <div class="feature__img">
-            <img src="../image/feat2.png" alt="feature" />
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <!-- feature content -->
+            <div class="feature-content">
+              <div class="feature-content__title">HOME DELIVERY</div>
+
+              <h2 class="feature-content__heading">
+                Sit At Home We Will Take Care Your Order
+              </h2>
+
+              <p class="feature-content__desc">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+              </p>
+
+              <button class="feature-content__btn btn">Explore Now</button>
+            </div>
           </div>
         </div>
       </div>
@@ -223,36 +245,40 @@
     <!-- call to action -->
     <section class="cta">
       <div class="container">
-        <div class="cta__wrap">
-          <!-- cta image -->
-          <div class="cta__img">
-            <img src="../image/mobile.svg" alt="cta" />
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6 cta-wrap-img">
+            <!-- cta image -->
+            <div class="cta__img">
+              <img src="../image/mobile.svg" alt="cta" />
+            </div>
           </div>
 
-          <!-- cta content -->
-          <div class="cta-content">
-            <div class="cta-content__title">Download our app</div>
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <!-- cta content -->
+            <div class="cta-content">
+              <div class="cta-content__title">Download our app</div>
 
-            <h2 class="cta-content__heading">
-              Get The Groceries App Order More Easily.
-            </h2>
+              <h2 class="cta-content__heading">
+                Get The Groceries App Order More Easily.
+              </h2>
 
-            <p class="cta-content__desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut.
-            </p>
+              <p class="cta-content__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut.
+              </p>
 
-            <div class="cta-row">
-              <button class="cta-content__btn btn">
-                <img src="../image/apple.svg" alt="apple" />
-                <span>App Store</span>
-              </button>
+              <div class="cta-row">
+                <button class="cta-content__btn btn">
+                  <img src="../image/apple.svg" alt="apple" />
+                  <span>App Store</span>
+                </button>
 
-              <button class="cta-content__btn btn">
-                <img src="../image/playstore.svg" alt="play store" />
+                <button class="cta-content__btn btn">
+                  <img src="../image/playstore.svg" alt="play store" />
 
-                <span>Play Store</span>
-              </button>
+                  <span>Play Store</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -261,71 +287,89 @@
 
     <!-- footer -->
     <footer class="footer">
-      <div class="container">
-        <div class="footer-top">
-          <div class="footer-logo__wrap">
-            <img src="../image/logo.svg" alt="" class="logo" />
+      <div class="footer-top__inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <!-- footer logo wrap -->
+              <div class="footer-logo__wrap">
+                <div class="logo">
+                  <img src="../image/logo.svg" alt="Grover" />
+                </div>
 
-            <p class="logo-text">
-              Fast delivery, which is active all over the world, serves with
-              many transportation vehicles.
-            </p>
-          </div>
-
-          <div class="footer-row">
-            <!-- footer content 1 -->
-            <div class="footer-content">
-              <div class="footer-content__title">Company</div>
-
-              <ul class="footer-content__list">
-                <li class="footer-content__item"><a href="#!">About Us</a></li>
-                <li class="footer-content__item"><a href="#!">Blog</a></li>
-                <li class="footer-content__item">
-                  <a href="#!">All Products</a>
-                </li>
-                <li class="footer-content__item">
-                  <a href="#!">Locations Map</a>
-                </li>
-              </ul>
+                <p class="logo-text">
+                  Fast delivery, which is active all over the world, serves with
+                  many transportation vehicles.
+                </p>
+              </div>
             </div>
 
-            <!-- footer content 2 -->
-            <div class="footer-content">
-              <div class="footer-content__title">Services</div>
+            <div class="col-sm-12 col-md-12 col-lg-8">
+              <!-- footer row -->
+              <div class="footer-row">
+                <!-- footer content 1 -->
+                <div class="footer-content">
+                  <div class="footer-content__title">Company</div>
 
-              <ul class="footer-content__list">
-                <li class="footer-content__item">
-                  <a href="#!">Order tracking</a>
-                </li>
-                <li class="footer-content__item"><a href="#!">Wish List</a></li>
-                <li class="footer-content__item">
-                  <a href="#!">My account</a>
-                </li>
-                <li class="footer-content__item">
-                  <a href="#!">Terms & Conditions</a>
-                </li>
-              </ul>
-            </div>
+                  <ul class="footer-content__list">
+                    <li class="footer-content__item">
+                      <a href="#!">About Us</a>
+                    </li>
+                    <li class="footer-content__item"><a href="#!">Blog</a></li>
+                    <li class="footer-content__item">
+                      <a href="#!">All Products</a>
+                    </li>
+                    <li class="footer-content__item">
+                      <a href="#!">Locations Map</a>
+                    </li>
+                  </ul>
+                </div>
 
-            <!-- footer content 3 -->
-            <div class="footer-content">
-              <div class="footer-content__title">Get in Touch</div>
+                <!-- footer content 2 -->
+                <div class="footer-content">
+                  <div class="footer-content__title">Services</div>
 
-              <p class="footer-content__text">
-                Subscribe to our weekly Newsletter and receive updates via
-                email.
-              </p>
+                  <ul class="footer-content__list">
+                    <li class="footer-content__item">
+                      <a href="#!">Order tracking</a>
+                    </li>
+                    <li class="footer-content__item">
+                      <a href="#!">Wish List</a>
+                    </li>
+                    <li class="footer-content__item">
+                      <a href="#!">My account</a>
+                    </li>
+                    <li class="footer-content__item">
+                      <a href="#!">Terms & Conditions</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- footer content 3 -->
+                <div class="footer-content">
+                  <div class="footer-content__title">Get in Touch</div>
+
+                  <p class="footer-content__text">
+                    Subscribe to our weekly Newsletter and receive updates via
+                    email.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- footer bottom -->
-        <div class="footer-bottom">
-          <p class="footer-copyright">All Rights Reserved @ BESNIK 2021</p>
+      <div class="footer-bottom__inner">
+        <div class="container">
+          <!-- footer bottom -->
+          <div class="footer-bottom">
+            <p class="footer-copyright">All Rights Reserved @ BESNIK 2021</p>
 
-          <div class="footer-condition">
-            <a href="#!" class="footer-condition__link">Terms & Conditions</a>
-            <a href="#!" class="footer-condition__link">Privacy & Policy</a>
+            <div class="footer-condition">
+              <a href="#!" class="footer-condition__link">Terms & Conditions</a>
+              <a href="#!" class="footer-condition__link">Privacy & Policy</a>
+            </div>
           </div>
         </div>
       </div>

@@ -1,0 +1,90 @@
+.box {
+  display: flex;
+  flex-direction: flex-end;
+  width: 400px;
+  height: 400px;
+  margin: 30px auto;
+  border: 1px solid red;
+  position: relative;
+}
+
+@keyframes move-span {
+  25% {
+    top: 0;
+    left: 100%;
+    translate: -100%;
+  }
+
+  50% {
+    top: 100%;
+    left: 100%;
+    translate: -100% -100%;
+  }
+
+  75% {
+    left: 0;
+    top: 100%;
+    translate: 0 -100%;
+  }
+}
+/* 
+.box span {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  display: block;
+  background: green;
+
+  animation-name: move-span;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+} */
+
+.box .span-1,
+.box .span-2,
+.box .span-3,
+.box .span-4 {
+  position: absolute;
+  bottom: 30%;
+  left: 30%;
+
+  width: 30px;
+  height: 30px;
+
+  background: blue;
+  border-radius: 12px;
+
+  animation-name: move-span;
+  animation-duration: 1s;
+  animation-delay: 0.1s;
+
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.box .span-2 {
+  left: 40%;
+
+  animation-delay: 0.2s;
+}
+
+.box .span-3 {
+  left: 50%;
+
+  animation-delay: 0.3s;
+}
+
+.box .span-4 {
+  left: 60%;
+
+  animation-delay: 0.4s;
+}
+
+@keyframes move-span {
+  50% {
+    height: 160px;
+  }
+}
