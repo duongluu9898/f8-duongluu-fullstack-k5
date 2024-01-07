@@ -238,6 +238,16 @@ a {
 .header nav ul {
   display: flex;
   column-gap: 22px;
+  position: relative;
+}
+.header nav ul li:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 10px;
+  width: 70px;
+  height: 2px;
+  background-color: #000;
 }
 .header nav a {
   color: #000;
@@ -262,6 +272,34 @@ a {
 }
 .main .wide {
   grid-column: span 2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .wide > span {
+  display: block;
+  position: absolute;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.main .wide .group {
+  position: absolute;
+  left: 20px;
+}
+.main .wide .group h3 {
+  color: #001aa2;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.main .wide .group .heading-color {
+  color: #fd2e24;
+}
+.main .wide .group p {
+  color: #000;
+  font-size: 1.4rem;
+  margin-top: 16px;
 }
 .main .tall {
   grid-row: span 2;

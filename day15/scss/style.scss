@@ -140,6 +140,17 @@ a {
     ul {
       display: flex;
       column-gap: 22px;
+      position: relative;
+
+      li:nth-child(1)::after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 10px;
+        width: 70px;
+        height: 2px;
+        background-color: $text-color;
+      }
     }
 
     a {
@@ -171,6 +182,39 @@ a {
 
   .wide {
     grid-column: span 2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > span {
+      display: block;
+      position: absolute;
+      color: #fff;
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    .group {
+      position: absolute;
+      left: 20px;
+
+      h3 {
+        color: #001aa2;
+        font-size: 2.4rem;
+        font-weight: 600;
+      }
+
+      .heading-color {
+        color: #fd2e24;
+      }
+
+      p {
+        color: $text-color;
+        font-size: 1.4rem;
+        margin-top: 16px;
+      }
+    }
   }
 
   .tall {
@@ -184,4 +228,5 @@ a {
     border-radius: 16px;
   }
 }
+
 // end main
