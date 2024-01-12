@@ -166,49 +166,10 @@ a {
   grid-template-areas: "aside header header header header" "aside main main main main" "aside main main main main" "aside main main main main" "aside main main main main";
 }
 
-@media screen and (max-width: 992px) {
-  .container {
-    grid-template-areas: " header header header header header" "main main main main main" "main main main main main" "main main main main main" "main main main main main";
-  }
-}
-@media screen and (max-width: 992px) {
-  .container {
-    max-width: 84%;
-    grid-template-rows: auto 1fr 1fr 1fr 1fr;
-  }
-}
-.wrapper {
-  position: relative;
-}
-
-.icon-right {
-  display: none;
-}
-
-@media screen and (max-width: 992px) {
-  .icon-right {
-    display: inline-block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 50%;
-    position: sticky;
-    left: 0;
-    background: #ccc;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-}
-#click-sidebar:checked ~ .sidebar {
-  transform: translate(20%);
-}
-
 .sidebar {
   grid-area: aside;
   display: flex;
   flex-direction: column;
-  position: relative;
   padding: 53px 44px 62px 58px;
 }
 .sidebar .logo {
@@ -251,9 +212,6 @@ a {
   font-weight: 600;
   padding: 8px 10px;
 }
-.sidebar .icon-right {
-  display: none;
-}
 .sidebar .help {
   display: flex;
   align-items: center;
@@ -264,50 +222,11 @@ a {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1200px) {
-  .sidebar {
-    padding: 40px 10px 10px 20px;
-  }
-}
-@media screen and (max-width: 992px) {
-  .sidebar {
-    transform: translateX(-100%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #f7f5f5;
-    z-index: 98;
-    height: 100vh;
-  }
-  .sidebar .logo {
-    display: none;
-  }
-  .sidebar .heading {
-    margin-top: 20px;
-  }
-  .sidebar .nav {
-    padding: 20px 10px 10px 10px;
-  }
-}
 .header {
   grid-area: header;
   display: flex;
   align-items: center;
-  position: relative;
   height: 128px;
-}
-.header .logo {
-  display: none;
-}
-@media screen and (max-width: 992px) {
-  .header .logo {
-    display: block;
-    width: 98px;
-    height: 46px;
-    flex-shrink: 0;
-    margin-right: auto;
-    cursor: pointer;
-  }
 }
 .header .search-form {
   display: flex;
@@ -328,7 +247,6 @@ a {
   display: flex;
   column-gap: 22px;
   position: relative;
-  z-index: 99;
 }
 .header nav ul li {
   cursor: pointer;
@@ -346,7 +264,7 @@ a {
   bottom: -10px;
   left: 8px;
   width: 0;
-  height: 2px;
+  height: 3px;
   background: #000;
   transition: width 0.3s;
 }
@@ -358,43 +276,7 @@ a {
   column-gap: 26px;
   margin-left: 50px;
 }
-@media screen and (max-width: 768px) {
-  .header .actions {
-    display: none;
-  }
-}
-.header .icon-bar-link {
-  padding: 8px;
-  font-size: 2.2rem;
-  margin-left: 20px;
-  display: none;
-  cursor: pointer;
-}
 
-@media screen and (max-width: 1200px) {
-  .header .nav {
-    display: none;
-  }
-  .header .nav ul {
-    flex-direction: column;
-    border-radius: 8px;
-    gap: 20px;
-    height: 244px;
-    position: absolute;
-    background: #f8f6f6;
-    top: 100px;
-    right: 0;
-  }
-  .header .nav ul li {
-    padding: 12px 12px;
-  }
-  .header .icon-bar-link {
-    display: block;
-  }
-  .header #toggle:checked ~ .nav {
-    display: block;
-  }
-}
 .main {
   grid-area: main;
   display: grid;
@@ -451,14 +333,9 @@ a {
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .main {
-    display: flex;
-    flex-direction: column;
-    margin-top: auto;
-  }
-  .main img {
-    height: 300px;
+    grid-auto-rows: 100px;
   }
 }
 

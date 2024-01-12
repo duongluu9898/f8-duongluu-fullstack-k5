@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ecommerce website UI</title>
 
+    <!-- embed font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
     <!-- embed fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,8 +40,15 @@
   </head>
   <body>
     <div class="wrapper">
+      <label for="click-sidebar" class="icon-right">
+        <i class="fa-solid fa-chevron-right"></i>
+      </label>
+
       <div class="container">
         <!-- sidebar -->
+
+        <input type="checkbox" id="click-sidebar" hidden />
+
         <aside class="sidebar">
           <img src="./image/logo.png" alt="caped" class="logo" />
 
@@ -85,10 +98,14 @@
             <span>Help Center</span>
           </div>
         </aside>
+
         <!-- end sidebar -->
 
         <!-- header -->
         <header class="header">
+          <!-- logo-->
+          <img src="./image/logo.png" alt="" class="logo" />
+
           <!-- search form -->
           <form action="" class="search-form">
             <img src="./icon/search.svg" alt="" class="icon" />
@@ -98,6 +115,7 @@
           <!-- end search form -->
 
           <!-- nav -->
+          <input type="checkbox" id="toggle" hidden />
           <nav class="nav">
             <ul>
               <li>
@@ -125,6 +143,11 @@
               <img src="./icon/person.svg" alt="" class="action-icon" />
             </a>
           </div>
+
+          <!-- icon bar -->
+          <label class="icon-bar-link" for="toggle">
+            <i class="fa-solid fa-bars"></i>
+          </label>
           <!-- end actions -->
         </header>
         <!-- end header -->
@@ -133,7 +156,8 @@
         <main class="main">
           <div class="wide">
             <span>GET UP TO 50% OFF</span>
-            <img src="./image/img1.jpg" alt="" />
+            <img src="./image/bg1.png" alt="" />
+            <img src="./image/Mask Group.png" alt="" class="img-bg" />
           </div>
 
           <div class="tall">
@@ -141,7 +165,7 @@
           </div>
 
           <div class="wide">
-            <img src="./image/img2.jpg" alt="" />
+            <img src="./image/Mask Group (1).png" alt="" />
           </div>
 
           <div class="tall">
