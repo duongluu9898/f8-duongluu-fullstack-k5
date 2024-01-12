@@ -189,8 +189,8 @@ select {
   border-bottom-right-radius: 12px;
 }
 
-#login:checked ~ .landing-info .tab-switch .login-btn,
-#register:checked ~ .landing-info .tab-switch .register-btn {
+#login:checked ~ .tab-switch .login-btn,
+#register:checked ~ .tab-switch .register-btn {
   color: #3e3f5e;
   background-color: #fff;
   cursor: auto;
@@ -215,12 +215,11 @@ select {
 }
 
 .register-form {
-  display: none;
+  /* display: none; */
 }
 
 #register:checked ~ .landing-form .login-form,
 #login:checked ~ .landing-form .register-form {
-  transform: translate(50%, 0px);
   opacity: 0;
   visibility: hidden;
   z-index: 1;
@@ -231,7 +230,6 @@ select {
 
 #register:checked ~ .landing-form .login-form,
 #login:checked ~ .landing-form .register-form {
-  transform: translate(0px, 0px);
   opacity: 1;
   display: none;
   left: auto;
