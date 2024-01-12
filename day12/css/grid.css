@@ -278,7 +278,7 @@
 }
 
 /* screen 1400px */
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1366px) {
   .col-xxl-1 {
     --column-size: 1;
   }
