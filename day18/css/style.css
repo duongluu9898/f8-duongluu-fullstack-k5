@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  color: #2c2c2c;
+  line-height: 1.27;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+a:hover {
+  color: #46b20f;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2c2c2c;
+}
+
+.container {
+  max-width: 92%;
+  margin: 0 auto;
+}
+
+.products {
+  padding: 50px 0;
+}
+.products .products-inner .heading {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 800;
+}
+.products .products-inner .list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+@media screen and (min-width: 992px) {
+  .products .products-inner .list-item {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.products .products-inner .list-item .item {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 26%;
+  height: auto;
+}
+.products .products-inner .list-item .item .img-group {
+  position: relative;
+}
+.products .products-inner .list-item .item .img-group .img-main {
+  position: absolute;
+  top: 41%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.products .products-inner .list-item .item .item-info {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.products .products-inner .list-item .item .item-info .item-heading {
+  margin-top: 80px;
+  font-size: 2.3rem;
+  text-align: center;
+  font-weight: 700;
+}
+.products .products-inner .list-item .item .item-info .item-separate {
+  margin-top: 10px;
+}
+.products .products-inner .list-item .item .item-info .item-desc {
+  color: #656565;
+  margin-top: 18px;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.products .products-inner .list-item .item .item-info .item-price {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 4px;
+}
+.products .products-inner .list-item .item .item-info .item-price span {
+  color: #000;
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+.products .products-inner .list-item .item .item-btn {
+  display: inline-flex;
+  padding: 18px 14px;
+  margin-top: 24px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  border-radius: 6px;
+  background: #46b20f;
+  color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 86%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
