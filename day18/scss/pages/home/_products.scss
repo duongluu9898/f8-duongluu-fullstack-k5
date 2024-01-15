@@ -18,25 +18,19 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-evenly;
 
-      //   row-gap: 100px;
+      row-gap: 100px;
       margin-top: 60px;
-
-      @media screen and (min-width: 992px) {
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
 
       .item {
         display: flex;
         flex-flow: column;
         align-items: center;
         justify-content: space-between;
-        width: 26%;
-        height: auto;
         .img-group {
           position: relative;
+          cursor: pointer;
 
           .img-bg {
           }
@@ -51,7 +45,7 @@
         }
 
         .item-info {
-          width: 80%;
+          width: 100%;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -61,6 +55,7 @@
             font-size: 2.3rem;
             text-align: center;
             font-weight: 700;
+            height: 60px;
           }
 
           .item-separate {
@@ -89,7 +84,7 @@
 
         .item-btn {
           display: inline-flex;
-          padding: 18px 14px;
+          padding: 14px 12px;
           margin-top: 24px;
           font-weight: 700;
           font-size: 1.8rem;
@@ -97,27 +92,173 @@
           border-radius: 6px;
           background: #46b20f;
           color: #fff;
+          cursor: pointer;
+
+          &:hover {
+            background: #ff6916;
+          }
+
+          &:active {
+            background: #e05000;
+          }
         }
       }
     }
   }
 }
 
+// responsive > 992px
 @media screen and (min-width: 992px) {
   .container {
-    max-width: 86%;
+    max-width: 88%;
   }
 
-  .products-inner {
-    .list-item {
-      .img-bg {
+  .products {
+    .products-inner {
+      .list-item {
+        flex-direction: row;
+        flex-wrap: wrap;
+        .item {
+          width: 30%;
+
+          .img-bg {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+          }
+
+          .img-main {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+          }
+
+          .item-info {
+            .item-heading {
+              font-size: 1.8rem;
+            }
+            .item-separate {
+              margin-top: 4px;
+            }
+
+            .item-desc {
+              font-size: 1.4rem;
+            }
+
+            .item-price {
+              font-size: 1.4rem;
+
+              span {
+                font-size: 2rem;
+              }
+            }
+          }
+
+          .item-btn {
+            font-size: 1.6rem;
+            padding: 10px 8px;
+          }
+        }
+      }
+    }
+  }
+}
+// end responsive > 992px
+
+// responsive > 1200px
+@media screen and (min-width: 1200px) {
+  .products {
+    .container {
+      max-width: 84%;
+    }
+
+    .products-inner {
+      .list-item {
+        .item {
+          .img-group {
+            .img-bg {
+            }
+          }
+
+          .item-info {
+            .item-heading {
+              font-size: 2rem;
+            }
+          }
+
+          .item-btn {
+            padding: 14px 12px;
+          }
+        }
+      }
+    }
+  }
+}
+// end responsive > 1200px
+
+// responsive > 1400px
+@media screen and (min-width: 1400px) {
+  .products {
+    .container {
+      max-width: 78%;
+    }
+
+    .products-inner {
+      .heading {
+        font-size: 3.2rem;
+        line-height: 1.3;
       }
 
-      .img-main {
-      }
+      .list-item {
+        margin-top: 50px;
+        column-gap: 0;
+        justify-content: center;
+        .item {
+          .img-group {
+            .img-bg {
+              width: initial;
+              height: initial;
+            }
 
-      .item-info {
-        .item-heading {
+            .img-main {
+              width: initial;
+              height: initial;
+            }
+          }
+
+          .item-info {
+            margin-top: 16px;
+
+            .item-heading {
+              font-size: 2.4rem;
+            }
+
+            .item-separate {
+              margin-top: 16px;
+            }
+
+            .item-desc {
+              font-size: 1.6rem;
+              line-height: 1.3;
+            }
+
+            .item-price {
+              font-size: 1.6rem;
+              line-height: 1.3;
+              margin-top: 6px;
+
+              span {
+                font-size: 2.3rem;
+              }
+            }
+          }
+
+          .item-btn {
+            font-size: 1.6rem;
+            font-weight: 700;
+            padding: 14px 16px;
+            margin-top: 31px;
+          }
         }
       }
     }
