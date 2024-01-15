@@ -167,11 +167,10 @@
 
 // responsive > 1200px
 @media screen and (min-width: 1200px) {
+  .container {
+    max-width: 84%;
+  }
   .products {
-    .container {
-      max-width: 84%;
-    }
-
     .products-inner {
       .list-item {
         .item {
@@ -198,11 +197,10 @@
 
 // responsive > 1400px
 @media screen and (min-width: 1400px) {
+  .container {
+    max-width: 78%;
+  }
   .products {
-    .container {
-      max-width: 78%;
-    }
-
     .products-inner {
       .heading {
         font-size: 3.2rem;
