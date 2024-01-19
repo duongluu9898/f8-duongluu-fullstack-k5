@@ -1,0 +1,233 @@
+.benefits {
+  position: relative;
+  margin-top: 100px;
+
+  .benefits-inner {
+    .benefits-heading {
+      font-size: 3.1667rem;
+      font-weight: 800;
+      line-height: 1.31;
+      text-align: center;
+    }
+
+    .benefits-desc {
+      margin-top: 24px;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.27;
+      text-align: center;
+    }
+
+    .benefits-top-list {
+      margin-top: 50px;
+
+      .row-gap {
+        row-gap: 50px;
+      }
+
+      .center-item,
+      .right-item,
+      .left-item {
+        display: flex;
+        justify-content: center;
+        column-gap: 50px;
+      }
+      .benefits-top-item {
+        width: 347px;
+
+        .item-heading {
+          color: #e05000;
+          text-shadow: 0px 3.333px 3.333px rgba(0, 0, 0, 0.25);
+          font-size: 2rem;
+          font-weight: 600;
+          line-height: 1.33;
+
+          width: 300px;
+          margin-top: 24px;
+          padding-left: 27px;
+        }
+
+        .item-desc {
+          color: #19191b;
+          font-size: 1.6rem;
+          font-weight: 400;
+          line-height: 1.27;
+
+          width: 300px;
+          margin-top: 4px;
+          padding-left: 27px;
+        }
+      }
+    }
+
+    .benefits-bg {
+      display: none;
+    }
+
+    .benefits-bottom-list {
+      margin-top: 100px;
+
+      .row-gap {
+        row-gap: 50px;
+      }
+
+      .benefit-bottom-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+
+        .item-content {
+          display: flex;
+          flex-direction: column;
+
+          .item-heading {
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1.33;
+          }
+
+          .item-desc {
+            font-size: 1.7rem;
+            font-weight: 500;
+            width: 218px;
+            margin-top: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//responsive > 768px
+@media screen and (min-width: 768px) {
+  .benefits {
+    .benefits-inner {
+      .benefits-heading {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .benefits-desc {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+}
+//end responsive > 768px
+
+//responsive > 992px
+@media screen and (min-width: 992px) {
+  .benefits {
+    .benefits-inner {
+      .benefits-heading {
+        width: 60%;
+      }
+
+      .benefits-desc {
+        width: 60%;
+      }
+
+      .benefits-top-list {
+        .benefits-top-item {
+          background: #fff;
+          padding-bottom: 10px;
+          border-radius: 8.333px;
+        }
+
+        .benefits-bg {
+          position: absolute;
+          display: block;
+          z-index: -1;
+          width: 2000px;
+          right: 0;
+          left: 0;
+          height: 320px;
+          top: 300px;
+        }
+      }
+
+      .benefits-bottom-list {
+        margin-top: 140px;
+      }
+    }
+  }
+}
+//end responsive > 992px
+
+//responsive > 1200px
+@media screen and (min-width: 1200px) {
+  .benefits {
+    .benefits-inner {
+      .benefits-heading {
+      }
+
+      .benefits-desc {
+      }
+    }
+  }
+}
+//end responsive > 1200px
+
+//responsive > 1400px
+@media screen and (min-width: 1400px) {
+  .benefits {
+    .benefits-inner {
+      .benefits-heading {
+        width: 40%;
+      }
+
+      .benefits-desc {
+        width: 50%;
+      }
+
+      .benefits-top-list {
+        .center-item {
+          padding-right: 0;
+          padding-left: 0;
+        }
+        .right-item {
+          justify-content: flex-end;
+          padding-right: 0;
+        }
+
+        .left-item {
+          justify-content: flex-start;
+          padding-left: 0;
+        }
+
+        .benefits-bg {
+          height: 360px;
+          top: 340px;
+        }
+      }
+
+      .benefits-bottom-list {
+        margin-top: 250px;
+
+        .row-gap {
+          row-gap: 39px;
+        }
+
+        .center-item,
+        .right-item,
+        .left-item {
+          display: flex;
+          justify-content: center;
+        }
+
+        .right-item {
+          justify-content: flex-end;
+        }
+
+        .left-item {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
+//end responsive > 1400px

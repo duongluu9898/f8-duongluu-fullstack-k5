@@ -1,0 +1,247 @@
+.static {
+  padding-bottom: 100px;
+  margin-top: 60px;
+  .static-inner {
+    .static-heading {
+      font-size: 2.6rem;
+      text-align: center;
+      font-weight: 800;
+      line-height: 1.3;
+    }
+
+    .static-desc {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.27;
+      text-align: center;
+      margin-top: 24px;
+    }
+
+    .static-deco {
+      display: none;
+    }
+
+    .static-list {
+      .col-margin {
+        margin-top: 50px;
+      }
+
+      .static-item {
+        width: 60%;
+        margin: 0 auto;
+        padding: 52.5px;
+        border-radius: 3.333px;
+        background: #fff;
+        box-shadow: -5.833px 8.333px 72.5px 0px rgba(54, 54, 54, 0.12);
+
+        img {
+          border-radius: 10px;
+          background-color: #fff0e7;
+          display: inline-block;
+          width: 83px;
+          height: 83px;
+          padding: 19px;
+        }
+
+        .img-set-color {
+          background: #f2ffec;
+        }
+
+        .item-number {
+          display: block;
+          font-size: 4.3333rem;
+          font-weight: 800;
+          margin-top: 42.5px;
+        }
+
+        .item-desc {
+          font-size: 2rem;
+          font-weight: 400;
+          line-height: 1.54;
+          margin-top: 23px;
+        }
+      }
+    }
+  }
+}
+
+//responsive > 576px
+@media screen and (min-width: 576px) {
+  .static {
+    .static-inner {
+      .static-heading {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .static-desc {
+        width: 80%;
+        margin: 20px auto 0;
+      }
+
+      .static-list {
+        .static-item {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+//end responsive > 576px
+
+//responsive > 768px
+@media screen and (min-width: 768px) {
+  .static {
+    .static-inner {
+      .static-heading {
+        width: 60%;
+      }
+
+      .static-desc {
+        width: 70%;
+      }
+      .static-list {
+        .static-item {
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+//end responsive > 768px
+
+//responsive > 992px
+@media screen and (min-width: 992px) {
+  .static {
+    .static-inner {
+      .static-heading {
+        width: 50%;
+      }
+
+      .static-desc {
+        width: 60%;
+        margin: 20px auto 0;
+      }
+
+      .static-list {
+        position: relative;
+        margin-top: 40px;
+
+        .static-deco {
+          display: block;
+          position: absolute;
+          z-index: -1;
+        }
+
+        .deco-left {
+          top: -30px;
+          left: -10px;
+        }
+
+        .deco-right {
+          bottom: -100px;
+          right: -10px;
+        }
+        .static-item {
+          width: 80%;
+          padding: 40px 20px;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .site-right {
+          display: flex;
+          justify-content: flex-end;
+        }
+
+        .site-center {
+          display: flex;
+          justify-content: center;
+
+          .static-item {
+            width: 100%;
+            height: 120%;
+            margin-top: -30px;
+            justify-content: center;
+          }
+        }
+
+        .site-left {
+          display: flex;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
+//end responsive > 992px
+
+//responsive > 1200px
+@media screen and (min-width: 1200px) {
+  .static {
+    margin-top: 100px;
+    .static-inner {
+      .static-heading {
+        width: 48%;
+        font-size: 3rem;
+      }
+
+      .static-desc {
+        width: 50%;
+      }
+
+      .static-list {
+        margin-top: 80px;
+        .static-item {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+//end responsive > 1200px
+
+//responsive > 1400px
+@media screen and (min-width: 1400px) {
+  .static {
+    margin-top: 100px;
+    .static-inner {
+      .static-heading {
+        font-size: 3.1667rem;
+        width: 50%;
+      }
+
+      .static-desc {
+        margin-top: 24px;
+        width: 56%;
+      }
+      .static-list {
+        margin-top: 90px;
+
+        .deco-left {
+          top: -60px;
+          left: -30px;
+        }
+
+        .deco-right {
+          bottom: -100px;
+        }
+
+        .static-item {
+          width: 294px;
+          height: 337px;
+          padding: 33px;
+        }
+
+        .site-center {
+          .static-item {
+            width: 342px;
+            height: 392px;
+          }
+        }
+      }
+    }
+  }
+}
+//end responsive > 1400px

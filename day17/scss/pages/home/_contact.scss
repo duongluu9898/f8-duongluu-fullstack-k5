@@ -1,0 +1,133 @@
+.contact {
+  margin-top: 133px;
+
+  .contact-inner {
+    .row-gap {
+      row-gap: 20px;
+    }
+    .contact-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 70%;
+      }
+    }
+
+    .contact-form {
+      .contact-heading {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1.33;
+      }
+
+      .form {
+        margin-top: 26px;
+
+        .input-name {
+          display: inline-flex;
+          padding: 13.333px 13.333px 13.333px 13.333px;
+          width: 100%;
+          align-items: center;
+          gap: 8.333px;
+          border-radius: 6.667px;
+          border: 0.833px solid #a3a3a3;
+        }
+
+        .row-input {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 23px;
+
+          .input-email {
+            display: flex;
+            padding: 13.333px;
+            align-items: center;
+            width: 49%;
+            gap: 8.333px;
+            border-radius: 6.667px;
+            border: 0.833px solid #a3a3a3;
+          }
+
+          .input-phone {
+            display: flex;
+            padding: 13.333px;
+            align-items: center;
+            width: 49%;
+            gap: 8.333px;
+            border-radius: 6.667px;
+            border: 0.833px solid #a3a3a3;
+          }
+        }
+
+        .textarea {
+          margin-top: 23px;
+          width: 100%;
+          display: inline-flex;
+          padding: 13.333px;
+          align-items: center;
+          gap: 8.333px;
+          border-radius: 6.667px;
+          border: 0.833px solid #a3a3a3;
+        }
+
+        .form-btn {
+          margin-top: 26px;
+          width: 128px;
+          height: 46px;
+          color: #fff;
+          font-size: 1.6667rem;
+          font-weight: 700;
+
+          display: flex;
+          padding: 13.333px 11.667px;
+          justify-content: center;
+          align-items: center;
+          gap: 8.333px;
+          border-radius: 6.667px;
+          background: #46b20f;
+          margin-left: auto;
+
+          &:hover {
+            background: #ff6916;
+          }
+        }
+      }
+    }
+  }
+}
+
+//responsive > 576px
+@media screen and (min-width: 576px) {
+  .contact {
+    .contact-inner {
+      .contact-form {
+        .form {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+//end responsive > 576px
+
+//responsive > 992px
+@media screen and (min-width: 992px) {
+  .contact {
+    .contact-inner {
+      .contact-img {
+        img {
+          width: 100%;
+        }
+      }
+      .contact-form {
+        .form {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+//end responsive > 992px

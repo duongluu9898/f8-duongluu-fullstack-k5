@@ -1,0 +1,248 @@
+body {
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px 0;
+
+  .hero-inner {
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .hero-heading {
+        text-align: center;
+        font-size: 2.6rem;
+        font-weight: 800;
+        line-height: 1.3;
+        color: $textColor;
+      }
+
+      .hero-slogan {
+        text-align: center;
+        font-size: 3.2rem;
+        font-weight: 800;
+        color: $textColor;
+        margin-top: 20px;
+      }
+
+      .hero-desc {
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.27;
+        color: $textColor;
+        margin-top: 20px;
+        width: 100%;
+      }
+    }
+
+    .hero-group-img {
+      position: relative;
+      margin-top: 50px;
+
+      .hero-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 10px;
+
+        .main-img {
+          width: 70%;
+        }
+      }
+
+      .bg-img-1 {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+
+        z-index: -1;
+      }
+
+      .text-deco {
+        color: #216000;
+        font-size: 6rem;
+        font-weight: 800;
+        line-height: 1;
+        opacity: 0.15;
+        text-align: center;
+      }
+    }
+  }
+}
+// responsive > 576px
+@media screen and (min-width: 576px) {
+  .hero {
+    .hero-inner {
+      .hero-group-img {
+        .text-deco {
+          font-size: 7rem;
+        }
+      }
+    }
+  }
+}
+// end responsive > 576px
+
+// responsive > 768px
+@media screen and (min-width: 768px) {
+  .hero {
+    .hero-inner {
+      .hero-group-img {
+        .hero-img {
+          .main-img {
+            width: 60%;
+          }
+        }
+
+        .text-deco {
+          font-size: 8rem;
+        }
+      }
+    }
+  }
+}
+// end responsive > 768px
+
+// responsive > 992px
+@media screen and (min-width: 992px) {
+  .hero {
+    padding: 0;
+
+    .hero-inner {
+      .hero-content {
+        height: 100%;
+        align-items: flex-start;
+        .hero-heading {
+          text-align: left;
+        }
+
+        .hero-slogan {
+          text-align: left;
+        }
+
+        .hero-desc {
+          text-align: left;
+        }
+      }
+
+      .hero-group-img {
+        margin-top: 0;
+        position: unset;
+
+        .hero-img {
+          justify-content: flex-start;
+
+          .main-img {
+            width: 66%;
+          }
+        }
+
+        .bg-img-1 {
+          width: 48vw;
+          top: 0;
+          right: 0;
+          left: auto;
+        }
+
+        .text-deco {
+          position: absolute;
+          writing-mode: vertical-rl;
+          text-orientation: mixed;
+          top: 10px;
+          right: 10px;
+          font-size: 11rem;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+// end responsive > 992px
+
+//  responsive > 1200px
+@media screen and (min-width: 1200px) {
+  .hero {
+    .hero-inner {
+      .hero-content {
+        .hero-heading {
+          font-size: 3rem;
+        }
+
+        .hero-slogan {
+          font-size: 3.6rem;
+        }
+      }
+      .hero-group-img {
+        .hero-img {
+          .main-img {
+            width: 72%;
+          }
+        }
+
+        .bg-img-1 {
+          width: 48vw;
+        }
+
+        .text-deco {
+          top: 40px;
+          right: 0;
+          font-size: 13rem;
+        }
+      }
+    }
+  }
+}
+// end responsive > 1200px
+
+//  responsive > 1400px
+@media screen and (min-width: 1400px) {
+  .hero {
+    .hero-inner {
+      .hero-content {
+        .hero-heading {
+          font-size: 3.667rem;
+        }
+
+        .hero-slogan {
+          font-size: 4.3333rem;
+          width: 80%;
+        }
+
+        .hero-desc {
+          width: 449px;
+        }
+      }
+      .hero-group-img {
+        .hero-img {
+          .main-img {
+            width: 80%;
+          }
+        }
+
+        .bg-img-1 {
+          width: 49vw;
+        }
+
+        .text-deco {
+          right: 33px;
+          top: 55px;
+          font-size: 16.6667rem;
+        }
+      }
+    }
+  }
+}
+// end responsive > 1400px
