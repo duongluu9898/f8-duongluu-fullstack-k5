@@ -304,12 +304,19 @@ footer .footer-inner .footer-bottom .footer-group-brand {
   display: flex;
   gap: 12.67px;
 }
-footer .footer-inner .footer-bottom .footer-group-brand img {
+footer .footer-inner .footer-bottom .footer-group-brand div {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
   background: #dcffca;
+}
+footer .footer-inner .footer-bottom .footer-group-brand div img {
   display: inline-block;
   width: 20px;
   height: 20px;
-  border-radius: 50%;
 }
 
 @media screen and (min-width: 992px) {
