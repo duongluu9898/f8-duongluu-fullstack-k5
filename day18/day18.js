@@ -158,8 +158,9 @@ document.write(`<h2>Bài 8: Tính giá trị biểu thức không dùng vòng l�
 //console
 let total = 0;
 function totalNumber(n) {
-  total += 1 / n;
+  total = total + 1 / n;
   n++;
+  return;
 }
-totalNumber(5);
+totalNumber(2);
 console.log(total);
