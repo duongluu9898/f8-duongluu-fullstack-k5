@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- embed font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- sign up -->
+    <button class="btn">Đăng nhập</button>
+
+    <!-- modal -->
+    <div class="modal">
+      <div class="modal-dialog">
+        <!-- toggle -->
+        <div class="modal-toggle">
+          <span class="toggle-sign-in">Đăng nhập</span>
+          <span class="toggle-sign-up">Đăng kí</span>
+        </div>
+
+        <!-- form sign in -->
+        <form action="" class="form form-sign-in">
+          <span class="span-top">với các tài khoản mạng xã hội</span>
+
+          <div class="form-social">
+            <div class="group-social">
+              <img
+                src="./Google__G__logo.svg.png"
+                alt="google"
+                class="social-img"
+              />
+              <span class="social-name">Google</span>
+            </div>
+
+            <div class="group-social">
+              <img
+                src="./Facebook_Logo_(2019).png"
+                alt="facebook"
+                class="social-img"
+              />
+              <span class="social-name">Facebook</span>
+            </div>
+          </div>
+
+          <div class="span-bottom">hoặc</div>
+
+          <label for="sign-in-email" class="form-label">Email</label>
+          <input type="email" id="sign-in-email" placeholder="Email" />
+
+          <label for="sign-in-password" class="form-label label-space"
+            >Mật khẩu</label
+          >
+          <input type="sign-in-password" id="password" placeholder="Mật khẩu" />
+
+          <div class="form-forgot">
+            <i>Quên mật khẩu?</i>
+          </div>
+
+          <button class="btn-sign-in">Đăng nhập</button>
+        </form>
+
+        <!-- form sign up -->
+        <form action="" class="form form-sign-up toggle">
+          <p class="form-desc">
+            Hoàn thành đăng kí và bắt đầu trải nghiệm ngay
+          </p>
+
+          <label for="name" class="from-label">Họ và tên</label>
+          <input type="text" id="name" placeholder="Họ và tên" />
+
+          <label for="sign-up-email" class="form-label label-space"
+            >Email</label
+          >
+          <input type="email" id="sign-up-email" placeholder="email" />
+
+          <label for="sign-up-password" class="form-label label-space"
+            >Mật khẩu</label
+          >
+          <input type="password" id="sign-up-password" placeholder="Mật khẩu" />
+
+          <p class="form-regulation">
+            Bằng cách đăng kí tài khoản, bạn cũng đồng thời chấp nhận mọi
+            <span>điều kiện về qui định và chính sách của Dân trí</span>
+          </p>
+
+          <button class="btn-sign-up">Đăng kí</button>
+        </form>
+      </div>
+
+      <div class="modal-overlay"></div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

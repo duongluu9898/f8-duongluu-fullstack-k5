@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sign-up {
+  width: 100px;
+  margin: 30px auto;
+}
+
+/* CONTENT */
+.modal {
+  /* display: none; */
+}
+
+.modal.open {
+  display: block;
+}
+
+.modal .modal-dialog {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 5%;
+
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 40px;
+  background: #fff;
+  z-index: 100;
+}
+
+.social-img {
+  width: 20px;
+}
+
+.modal-toggle {
+  display: flex;
+  font-size: 20px;
+  font-weight: 500;
+  justify-content: space-around;
+  background: #ccc;
+  padding: 10px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.form .span-top {
+  margin: 0 auto;
+}
+
+.form .span-bottom {
+  margin: 10px auto 20px;
+}
+
+.form-social {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+  justify-content: space-around;
+}
+
+.group-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+}
+
+.label-space {
+  margin-top: 14px;
+}
+
+input {
+  padding: 8px 0;
+  margin-top: 4px;
+}
+
+.form-forgot {
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+.btn-sign-in {
+  background: green;
+  color: #fff;
+  padding: 10px 0;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: green;
+}
+
+.form-desc {
+  text-align: center;
+  margin: 10px 0 20px;
+}
+
+.form-regulation {
+  margin-top: 20px;
+}
+
+.form-regulation span {
+  color: blue;
+}
+
+.btn-sign-up {
+  background: green;
+  color: #fff;
+  padding: 10px 0;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: green;
+}
+
+/* OVERLAY */
+.modal .modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: #00000084;
+  z-index: 90;
+}
+
+.toggle {
+  display: none;
+}
