@@ -21,6 +21,10 @@ img {
   transition: 0.3s translate linear;
 }
 
+.item {
+  width: 100%;
+}
+
 /* carousel nav */
 .carousel .carousel-nav span {
   position: absolute;
