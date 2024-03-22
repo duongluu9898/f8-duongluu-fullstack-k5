@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tool Bar</title>
+    <!-- link font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="player">
+      <div class="player-action">
+        <i class="fa-solid fa-play"></i>
+      </div>
+      <div class="player-timer">
+        <span>00:00</span>
+        <div class="progress-bar">
+          <div class="progress">
+            <span></span>
+          </div>
+
+          <span class="time-preview">00:00</span>
+        </div>
+        <span>00:00</span>
+      </div>
+    </div>
+    <!-- karaoke -->
+
+    <button class="open-karaoke">Hát karaoke</button>
+    <div class="karaoke">
+      <div class="karaoke-inner">
+        <div class="karaoke-header">
+          <h2>Karaoke</h2>
+          <span class="close"><i class="fa-angle-down fa-solid"></i></span>
+        </div>
+
+        <div class="karaoke-lyrics">
+          <span class="title"></span>
+          <span class="author"></span>
+        </div>
+      </div>
+    </div>
+
+    <audio src="./df92f016f35fe8ef1ee2499e8e9b45b9.mp3" controls></audio>
+    <!-- </div> -->
+
+    <script src="./main.js"></script>
+  </body>
+</html>
