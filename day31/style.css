@@ -71,7 +71,7 @@
 }
 
 /* karaoke */
-.open-karaoke {
+/* .open-karaoke {
   background: #892be2;
   color: white;
   display: inline-block;
@@ -88,7 +88,6 @@
   color: white;
   background: #892be2;
   translate: 0 100%;
-  /* transform: translateY(100%); */
   transition: 0.3s linear;
 }
 
@@ -125,4 +124,37 @@
   font-weight: 600;
   font-family: sans-serif;
   transition: 0.2s;
+} */
+
+.karaoke {
+  background: blueviolet;
+  color: #fff;
+}
+
+.karaoke .karaoke-inner {
+  max-width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.karaoke .karaoke-inner p {
+  margin: 10px 0;
+}
+
+.karaoke .karaoke-inner .words {
+  position: relative;
+}
+
+.karaoke .karaoke-inner .words span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  overflow: hidden;
+  color: yellow;
 }

@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.list {
+  background: #4286f4;
+  width: 450px;
+  padding: 10px;
+}
+
+.ghost {
+  opacity: 0.4;
+}
+
+.item {
+  background: #8bb3f4;
+  padding: 6px;
+  border: 1px solid #fff;
+  margin: 1px 0;
+}
+
+.item.module {
+  background: #ff6f00;
+}
