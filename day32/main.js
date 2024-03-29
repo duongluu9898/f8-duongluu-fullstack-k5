@@ -9,7 +9,7 @@ items.forEach(function (item) {
   //add ghost
   var dragStart = item.addEventListener("dragstart", function (e) {
     dragItem = e.currentTarget;
-    console.log(dragItem);
+    // console.log(dragItem);
     e.currentTarget.classList.add("ghost");
   });
 

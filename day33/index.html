@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc Editor</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="title">Doc Editor</h3>
+
+      <div class="control">
+        <div class="main-control">
+          <!-- drop down -->
+          <div class="dropdown">
+            <button class="btn">File</button>
+
+            <div class="dropdown-menu">
+              <button class="down-item button-new">New</button>
+              <button class="down-item button-txt">Save as TXT</button>
+              <button class="down-item button-pdf">Save as PDF</button>
+            </div>
+          </div>
+          <!-- end drop down -->
+
+          <input type="text" value="untitled" class="input" />
+        </div>
+
+        <div class="control-btn">
+          <button class="btn bold-btn"><b>b</b></button>
+          <button class="btn underline-btn"><u>u</u></button>
+          <button class="btn italic-btn"><i>i</i></button>
+          <input type="text" class="color-btn" />
+        </div>
+      </div>
+
+      <div class="content" contenteditable="true" spellcheck="false">text</div>
+
+      <div class="count">
+        <div class="count-letter">Số kí tự: <span>0</span></div>
+        <div class="count-text">Số từ: <span>0</span></div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
