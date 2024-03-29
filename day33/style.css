@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   width: 80%;
   margin: 20px auto;
@@ -65,8 +69,12 @@
   font-size: 16px;
 }
 
-.control .input {
-  padding: 0 6px;
+.control .name-file {
+  padding: 0 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
 }
 
 .control .control-btn .btn {

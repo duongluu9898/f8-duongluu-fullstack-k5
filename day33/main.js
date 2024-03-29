@@ -1,6 +1,9 @@
 var contentEl = document.querySelector(".content");
 var content = contentEl.innerText;
 var dropdownMenu = document.querySelector(".dropdown-menu");
+var nameFile = document.querySelector(".name-file");
+var nameInner = nameFile.innerText;
+console.log(nameFile);
 
 console.log(contentEl);
 console.log(content);
@@ -13,19 +16,31 @@ toggle.addEventListener("click", function () {
   dropdownMenu.classList.toggle("open");
 });
 
+// document.addEventListener("click", function () {
+//   if (dropdownMenu.contains(".open")) {
+//     dropdownMenu.classList.remove("open");
+//   }
+// });
+
+// content.focus();
+//new
+// var buttonNew = document.querySelector(".button-new");
+// console.log(buttonNew);
+// buttonNew.addEventListener("click", function () {
+//   content.innerText = "";
+// });
+
 // download txt
 var blob = new Blob([content]);
 var previewURL = URL.createObjectURL(blob);
-console.log(blob);
-console.log(previewURL);
-
-var a = document.createElement("a");
-a.href = previewURL;
-a.download = "content.txt";
-
 var buttonTxt = document.querySelector(".button-txt");
-console.log(buttonTxt);
 
 buttonTxt.addEventListener("click", function () {
+  var content = contentEl.innerHTML;
+  var nameInner = nameFile.innerText;
+
+  var a = document.createElement("a");
+  a.href = previewURL;
+  a.download = `${nameInner}.txt`;
   a.click();
 });
