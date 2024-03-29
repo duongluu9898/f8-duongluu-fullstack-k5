@@ -3,15 +3,10 @@ var content = contentEl.innerText;
 var dropdownMenu = document.querySelector(".dropdown-menu");
 var nameFile = document.querySelector(".name-file");
 var nameInner = nameFile.innerText;
-console.log(nameFile);
-
-console.log(contentEl);
-console.log(content);
-console.log(dropdownMenu);
 
 // toggle
 var toggle = document.querySelector(".toggle");
-console.log(toggle);
+// console.log(toggle);
 toggle.addEventListener("click", function (e) {
   e.stopPropagation();
   dropdownMenu.classList.toggle("open");
@@ -22,7 +17,6 @@ document.addEventListener("click", function () {
 });
 
 //update content
-contentEl.focus();
 contentEl.addEventListener("input", function (e) {
   e.stopPropagation();
   var content = this.innerText;
@@ -39,14 +33,13 @@ buttonNew.addEventListener("click", function () {
 });
 
 // download txt
-var blob = new Blob([content]);
-var previewURL = URL.createObjectURL(blob);
 var buttonTxt = document.querySelector(".button-txt");
-
 buttonTxt.addEventListener("click", function () {
-  var content = contentEl.innerHTML;
+  var content = contentEl.innerText;
   var nameInner = nameFile.innerText;
 
+  var blob = new Blob([content]);
+  var previewURL = URL.createObjectURL(blob);
   var a = document.createElement("a");
   a.href = previewURL;
   a.download = `${nameInner}.txt`;
