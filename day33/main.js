@@ -34,6 +34,8 @@ var buttonNew = document.querySelector(".button-new");
 console.log(buttonNew);
 buttonNew.addEventListener("click", function () {
   contentEl.innerText = "";
+  countLetter.children[0].innerText = "0";
+  countWord.children[0].innerText = "0";
 });
 
 // download txt
@@ -77,4 +79,26 @@ underlineBtn.addEventListener("click", function () {
 italicBtn.addEventListener("click", function () {
   italicBtn.classList.toggle("add");
   document.execCommand("italic");
+});
+
+//count
+var count = document.querySelector(".count");
+var countLetter = count.querySelector(".count-letter");
+var countWord = count.querySelector(".count-word");
+console.log(count);
+console.log(countLetter);
+console.log(countWord);
+contentEl.addEventListener("input", function (e) {
+  e.stopPropagation();
+  var content = this.innerText;
+
+  //count letter
+  var letterLength = content.trim().length;
+  countLetter.children[0].innerText = letterLength;
+
+  //count text
+  var words = content.trim().split(" ").length;
+  console.log(words);
+
+  countWord.children[0].innerText = words;
 });
