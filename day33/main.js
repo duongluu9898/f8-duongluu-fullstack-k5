@@ -26,7 +26,7 @@ contentEl.focus();
 contentEl.addEventListener("input", function (e) {
   e.stopPropagation();
   var content = this.innerText;
-  console.log(this);
+  //   console.log(this);
 });
 
 //new
@@ -96,9 +96,8 @@ contentEl.addEventListener("input", function (e) {
   var letterLength = content.trim().length;
   countLetter.children[0].innerText = letterLength;
 
-  //count text
+  //count word
   var words = content.trim().split(" ").length;
-  console.log(words);
 
   countWord.children[0].innerText = words;
 });
