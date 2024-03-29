@@ -16,13 +16,14 @@ toggle.addEventListener("click", function () {
   dropdownMenu.classList.toggle("open");
 });
 
-// document.addEventListener("click", function () {
-//   if (dropdownMenu.contains(".open")) {
-//     dropdownMenu.classList.remove("open");
-//   }
-// });
+//update content
+contentEl.focus();
+contentEl.addEventListener("input", function (e) {
+  e.stopPropagation();
+  var content = this.innerText;
+  console.log(this);
+});
 
-// content.focus();
 //new
 // var buttonNew = document.querySelector(".button-new");
 // console.log(buttonNew);
