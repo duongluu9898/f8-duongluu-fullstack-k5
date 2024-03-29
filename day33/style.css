@@ -37,9 +37,25 @@
 
 .dropdown-menu {
   display: none;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  gap: 10px;
+  background-color: #fff;
+  padding: 4px 20px;
 }
 
-.control .main-control .btn {
+.dropdown-menu.open {
+  display: flex;
+}
+
+.dropdown-menu .down-item {
+  border: none;
+  background: #fff;
+}
+
+.control .main-control .toggle {
   background: #0d6efd;
   width: 66px;
   height: 34px;
