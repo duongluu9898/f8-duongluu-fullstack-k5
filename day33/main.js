@@ -53,6 +53,15 @@ buttonTxt.addEventListener("click", function () {
   a.click();
 });
 
+//download pdf
+var buttonPdf = document.querySelector(".button-pdf");
+console.log(buttonPdf);
+
+buttonPdf.addEventListener("click", function () {
+  nameInner = nameFile.innerText;
+  html2pdf().from(contentEl).save(`${nameInner}.pdf`);
+});
+
 //add bold, un, ita, color
 var boldBtn = document.querySelector(".bold-btn");
 var underlineBtn = document.querySelector(".underline-btn");
