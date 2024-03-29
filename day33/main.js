@@ -12,8 +12,13 @@ console.log(dropdownMenu);
 // toggle
 var toggle = document.querySelector(".toggle");
 console.log(toggle);
-toggle.addEventListener("click", function () {
+toggle.addEventListener("click", function (e) {
+  e.stopPropagation();
   dropdownMenu.classList.toggle("open");
+});
+
+document.addEventListener("click", function () {
+  dropdownMenu.classList.remove("open");
 });
 
 //update content
@@ -25,11 +30,11 @@ contentEl.addEventListener("input", function (e) {
 });
 
 //new
-// var buttonNew = document.querySelector(".button-new");
-// console.log(buttonNew);
-// buttonNew.addEventListener("click", function () {
-//   content.innerText = "";
-// });
+var buttonNew = document.querySelector(".button-new");
+console.log(buttonNew);
+buttonNew.addEventListener("click", function () {
+  contentEl.innerText = "";
+});
 
 // download txt
 var blob = new Blob([content]);
