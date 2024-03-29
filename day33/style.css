@@ -71,6 +71,10 @@ button {
   font-size: 18px;
 }
 
+.control .main-control .toggle:hover {
+  opacity: 0.7;
+}
+
 .control .name-file {
   padding: 0 10px;
   width: 200px;
@@ -95,6 +99,10 @@ button {
   border: none;
   border-radius: 6px;
   font-size: 18px;
+}
+
+.control .control-btn .btn:hover {
+  opacity: 0.7;
 }
 
 .control .control-btn .color-btn {
