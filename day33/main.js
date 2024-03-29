@@ -83,7 +83,7 @@ italicBtn.addEventListener("click", function () {
 
 //change color
 colorBtn.addEventListener("click", function () {
-  document.execCommand("foreColor", false, this.value);
+  document.execCommand("foreColor", true, this.value);
 });
 
 //count
@@ -103,6 +103,11 @@ contentEl.addEventListener("input", function (e) {
 
   //count word
   var words = content.trim().split(" ").length;
+  console.log(words);
 
-  countWord.children[0].innerText = words;
+  if (content === "") {
+    countWord.children[0].innerText = "0";
+  } else {
+    countWord.children[0].innerText = words;
+  }
 });
