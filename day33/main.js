@@ -81,6 +81,11 @@ italicBtn.addEventListener("click", function () {
   document.execCommand("italic");
 });
 
+//change color
+colorBtn.addEventListener("click", function () {
+  document.execCommand("foreColor", false, this.value);
+});
+
 //count
 var count = document.querySelector(".count");
 var countLetter = count.querySelector(".count-letter");
