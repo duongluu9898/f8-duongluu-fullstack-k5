@@ -50,3 +50,31 @@ buttonTxt.addEventListener("click", function () {
   a.download = `${nameInner}.txt`;
   a.click();
 });
+
+//add bold, un, ita, color
+var boldBtn = document.querySelector(".bold-btn");
+var underlineBtn = document.querySelector(".underline-btn");
+var italicBtn = document.querySelector(".italic-btn");
+var colorBtn = document.querySelector(".color-btn");
+console.log(boldBtn);
+console.log(underlineBtn);
+console.log(italicBtn);
+console.log(colorBtn);
+
+//bold
+boldBtn.addEventListener("click", function () {
+  boldBtn.classList.toggle("add");
+  document.execCommand("bold");
+});
+
+//underline
+underlineBtn.addEventListener("click", function () {
+  underlineBtn.classList.toggle("add");
+  document.execCommand("underline");
+});
+
+//italic
+italicBtn.addEventListener("click", function () {
+  italicBtn.classList.toggle("add");
+  document.execCommand("italic");
+});
