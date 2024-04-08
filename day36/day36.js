@@ -7,6 +7,9 @@ const SpeechRecognitionEvent =
   window.SpeechRecognitionEvent || window.webkitSpeechRecognitionEvent;
 
 //grammer
+// const grammar = `#JSGF V1.0; grammar colors; public <color> = ${colors.join(
+//     " | ",
+//   )};`;
 const grammar = `#JSGF V1.0;`;
 
 //speech recognition
@@ -19,7 +22,7 @@ speechRecognitionList.addFromString(grammar, 1);
 //plugging grammer into speechRecognition
 recognition.grammars = speechRecognitionList;
 recognition.continuous = false;
-recognition.lang = "vi-vn";
+recognition.lang = "vi-VN";
 recognition.interimResults = false;
 recognition.maxAlternatives = 1;
 
@@ -40,40 +43,24 @@ btn.onclick = () => {
 
 //Receiving and handling results
 recognition.onresult = (event) => {
-  const text = event.results[0][0].transcript;
-  diagnostic.textContent = `Result received: ${text}.`;
-  console.log(`Confidence: ${event.results[0][0].confidence}`);
+  const textSpeech = event.results[0][0].transcript.toLowerCase();
+  //   diagnostic.textContent = `Result received: ${text}.`;
+  //   console.log(`Confidence: ${event.results[0][0].confidence}`);
+  console.log(textSpeech);
 
-  //   console.log(`Kết quả nhận được: ${text}.`);
-  //   console.log(text);
-  //   console.log(event.result[0]);
-
-  //google
-  if (text.includes("google")) {
+  //open URL
+  if (textSpeech.includes("google")) {
     window.open("https://www.google.com", "_blank");
-
-    //facebook
-  } else if (text.includes("facebook")) {
+  } else if (textSpeech.includes("facebook")) {
     window.open("https://www.facebook.com", "_blank");
-
-    //youtube
-  } else if (text.includes("youtube")) {
+  } else if (textSpeech.includes("youtube")) {
     window.open("https://www.youtube.com", "_blank");
-
-    //google driver
-  } else if (text.includes("google drive")) {
+  } else if (textSpeech.includes("google drive")) {
     window.open("https://www.drive.google.com", "_blank");
-
-    //google map
-  } else if (text.includes("googles map")) {
-    window.open(
-      "https://www.google.com/maps/@9.779349,105.6189045,11z?hl=vi-VN&entry=ttu",
-      "_blank"
-    );
   }
 };
-
 //end speech
+
 recognition.onspeechend = () => {
   recognition.stop();
   action.style.display = "none";
@@ -81,8 +68,7 @@ recognition.onspeechend = () => {
 
 //Handling errors and unrecognized speech
 recognition.onnomatch = (event) => {
-  diagnostic.textContent = "Không thực hiện được yêu cầu";
-  console.log(diagnostic.textContent);
+  diagnostic.textContent = "I didn't recognize that color.";
 };
 
 recognition.onerror = (event) => {
