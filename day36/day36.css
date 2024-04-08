@@ -22,6 +22,14 @@
   margin-top: 20px;
 }
 
+.btn:hover {
+  background-color: green;
+}
+
+.text-wait {
+  margin-top: 16px;
+}
+
 .search-box .action {
   display: none;
   margin-top: 15px;

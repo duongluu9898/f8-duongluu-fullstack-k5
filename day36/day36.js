@@ -29,8 +29,10 @@ recognition.maxAlternatives = 1;
 //get btn, action
 const btn = document.querySelector(".btn");
 const action = document.querySelector(".action");
+const result = document.querySelector(".result");
 // console.log(btn);
 // console.log(action);
+// console.log(result);
 
 //add event click btn
 btn.onclick = () => {
@@ -57,6 +59,12 @@ recognition.onresult = (event) => {
     window.open("https://www.youtube.com", "_blank");
   } else if (textSpeech.includes("google drive")) {
     window.open("https://www.drive.google.com", "_blank");
+  } else if (textSpeech.includes("bản đồ")) {
+    window.open("https://www.google.com/maps");
+  } else if (textSpeech.includes("bài hát")) {
+    window.open("https://zingmp3.vn/");
+  } else {
+    result.innerText = "Không thực hiện được yêu cầu";
   }
 };
 //end speech
@@ -64,13 +72,14 @@ recognition.onresult = (event) => {
 recognition.onspeechend = () => {
   recognition.stop();
   action.style.display = "none";
+  result.style.display = "block";
 };
 
 //Handling errors and unrecognized speech
-recognition.onnomatch = (event) => {
-  diagnostic.textContent = "I didn't recognize that color.";
-};
+// recognition.onnomatch = (event) => {
+//   diagnostic.textContent = "I didn't recognize that color.";
+// };
 
-recognition.onerror = (event) => {
-  diagnostic.textContent = `Error occurred in recognition: ${event.error}`;
-};
+// recognition.onerror = (event) => {
+//   diagnostic.textContent = `Error occurred in recognition: ${event.error}`;
+// };
