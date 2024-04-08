@@ -1,24 +1,45 @@
-var btn = document.querySelector(".btn");
-var modal = document.querySelector(".modal");
-var overlay = document.querySelector(".modal-overlay");
-console.log(btn);
-console.log(modal);
+let btnOpen = document.querySelector(".btn-open");
+let modal = document.querySelector(".modal");
+let modalDialog = modal.querySelector(".modal-dialog");
+let overlay = modal.querySelector(".overlay");
+// console.log(btnOpen);
+// console.log(modal);
+// console.log(modalDialog);
+// console.log(overlay);
 
-//add class open
-btn.addEventListener("click", function () {
+var openModal = function () {
   modal.classList.add("open");
-});
+};
 
-//remove modal when click overlay
-overlay.addEventListener("click", function () {
+var closeModal = function () {
   modal.classList.remove("open");
+};
+
+btnOpen.addEventListener("click", openModal);
+overlay.addEventListener("click", closeModal);
+
+let signIn = document.querySelector(".sign-in");
+let signUp = document.querySelector(".sign-up");
+// console.log(signIn);
+// console.log(signUp);
+signIn.addEventListener("click", function () {
+  this.classList.add("open");
+  signUp.classList.remove("open");
 });
 
-//toggle sign-in and sign-up
-var toggleSignUp = document.querySelector(".toggle-sign-up"); //sign-up
-var toggleSignIn = document.querySelector("form-sign-in"); // sign-in
-console.log(toggleSignUp);
-console.log(toggleSignIn);
-toggleSignUp.addEventListener("click", function () {
-  toggleSignUp.classList.remove("toggle");
+signUp.addEventListener("click", function () {
+  this.classList.add("open");
+  signIn.classList.remove("open");
 });
+
+let formSignIn = document.querySelector(".form-sign-in");
+let formSignUp = document.querySelector(".form-sign-up");
+// console.log(formSignIn);
+// console.log(formSignUp);
+var toggle = function () {
+  formSignIn.classList.toggle("open");
+  formSignUp.classList.toggle("open");
+};
+
+signIn.addEventListener("click", toggle);
+signUp.addEventListener("click", toggle);

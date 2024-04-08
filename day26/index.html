@@ -15,88 +15,55 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- sign up -->
-    <button class="btn">Đăng nhập</button>
-
-    <!-- modal -->
+    <button class="btn-open">Đăng nhập</button>
     <div class="modal">
       <div class="modal-dialog">
-        <!-- toggle -->
-        <div class="modal-toggle">
-          <span class="toggle-sign-in">Đăng nhập</span>
-          <span class="toggle-sign-up">Đăng kí</span>
+        <div class="toggle">
+          <div class="toggle-min sign-in open">Đăng nhập</div>
+          <div class="toggle-min sign-up">Đăng kí</div>
         </div>
 
-        <!-- form sign in -->
-        <form action="" class="form form-sign-in">
-          <span class="span-top">với các tài khoản mạng xã hội</span>
-
-          <div class="form-social">
-            <div class="group-social">
-              <img
-                src="./Google__G__logo.svg.png"
-                alt="google"
-                class="social-img"
-              />
-              <span class="social-name">Google</span>
-            </div>
-
-            <div class="group-social">
-              <img
-                src="./Facebook_Logo_(2019).png"
-                alt="facebook"
-                class="social-img"
-              />
-              <span class="social-name">Facebook</span>
-            </div>
+        <!-- sign in -->
+        <form action="" class="form form-sign-in open">
+          <p>với các tài khoản mạng xã hội</p>
+          <div class="social">
+            <span>facebook</span>
+            <span>google</span>
           </div>
-
-          <div class="span-bottom">hoặc</div>
-
-          <label for="sign-in-email" class="form-label">Email</label>
-          <input type="email" id="sign-in-email" placeholder="Email" />
-
-          <label for="sign-in-password" class="form-label label-space"
-            >Mật khẩu</label
-          >
-          <input type="sign-in-password" id="password" placeholder="Mật khẩu" />
-
-          <div class="form-forgot">
-            <i>Quên mật khẩu?</i>
-          </div>
-
-          <button class="btn-sign-in">Đăng nhập</button>
+          <p>hoặc</p>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Email" />
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Password" />
+          <p class="forgot">Quên mật khẩu</p>
+          <button class="btn btn-sign-in">Đăng nhập</button>
         </form>
+        <!-- end sign in -->
 
-        <!-- form sign up -->
-        <form action="" class="form form-sign-up toggle">
-          <p class="form-desc">
-            Hoàn thành đăng kí và bắt đầu trải nghiệm ngay
+        <!-- sign up -->
+        <form action="" class="form form-sign-up">
+          <p>Hoàn thành đăng ký, và bắt đầu trải nghiệm ngay!</p>
+
+          <label for="name">Họ và tên</label>
+          <input type="text" placeholder="Họ và tên" id="name" />
+
+          <label for="email1">Email</label>
+          <input type="email" id="email2" placeholder="Email" />
+
+          <label for="password1">Password</label>
+          <input type="password" placeholder="Password" />
+
+          <p>
+            Bằng cách đăng ký tài khoản, bạn cũng đồng thời chấp nhận mọi điều
+            kiện về qui định và chính sách của Dân trí
           </p>
 
-          <label for="name" class="from-label">Họ và tên</label>
-          <input type="text" id="name" placeholder="Họ và tên" />
-
-          <label for="sign-up-email" class="form-label label-space"
-            >Email</label
-          >
-          <input type="email" id="sign-up-email" placeholder="email" />
-
-          <label for="sign-up-password" class="form-label label-space"
-            >Mật khẩu</label
-          >
-          <input type="password" id="sign-up-password" placeholder="Mật khẩu" />
-
-          <p class="form-regulation">
-            Bằng cách đăng kí tài khoản, bạn cũng đồng thời chấp nhận mọi
-            <span>điều kiện về qui định và chính sách của Dân trí</span>
-          </p>
-
-          <button class="btn-sign-up">Đăng kí</button>
+          <button class="btn btn-sign-up">Đăng kí</button>
         </form>
+        <!-- end sign up -->
       </div>
 
-      <div class="modal-overlay"></div>
+      <div class="overlay"></div>
     </div>
     <script src="./main.js"></script>
   </body>
